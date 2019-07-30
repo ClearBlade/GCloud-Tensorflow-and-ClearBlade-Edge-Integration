@@ -1,0 +1,165 @@
+{
+    "items": [
+        {
+            "cylinders": 4,
+            "drivetrain": "Rear",
+            "engine_size": 123.34,
+            "horsepower": 123,
+            "item_id": "21b45724-8315-46b4-a20a-cd68b46999bd",
+            "length": 123,
+            "make": "Acura",
+            "mpg_city": 43.900002,
+            "mpg_highway": 54,
+            "origin": "Asia",
+            "price": 15000,
+            "type": "SUV"
+        },
+        {
+            "cylinders": 6,
+            "drivetrain": "Rear",
+            "engine_size": 209.34,
+            "horsepower": 182,
+            "item_id": "7b6c49fa-60de-42e8-8d4f-de76a5bd9efd",
+            "length": 193,
+            "make": "BMW",
+            "mpg_city": 16.34,
+            "mpg_highway": 22,
+            "origin": "USA",
+            "price": 41315,
+            "type": "sedan"
+        },
+        {
+            "cylinders": 4,
+            "drivetrain": "Front",
+            "engine_size": 110.13,
+            "horsepower": 86,
+            "item_id": "7c63e69f-f246-4c9d-a412-602387f0fca5",
+            "length": 175,
+            "make": "Honda",
+            "mpg_city": 27.43,
+            "mpg_highway": 33,
+            "origin": "Europe",
+            "price": 10295,
+            "type": "sedan"
+        },
+        {
+            "cylinders": 6,
+            "drivetrain": "Rear",
+            "engine_size": 258.13,
+            "horsepower": 176,
+            "item_id": "97182e9a-37fd-4ef0-b08b-5a5cd1f3966c",
+            "length": 199,
+            "make": "Jaguar",
+            "mpg_city": 15.34,
+            "mpg_highway": 19,
+            "origin": "USA",
+            "price": 35550,
+            "type": "sedan"
+        },
+        {
+            "cylinders": 4,
+            "drivetrain": "Front",
+            "engine_size": 90.339996,
+            "horsepower": 68,
+            "item_id": "9e8a5121-2460-4861-b7c7-2b37b5e5d3fa",
+            "length": 157,
+            "make": "Dodge",
+            "mpg_city": 34.310001,
+            "mpg_highway": 38,
+            "origin": "USA",
+            "price": 6692,
+            "type": "SUV"
+        },
+        {
+            "cylinders": 6,
+            "drivetrain": "Front",
+            "engine_size": 190,
+            "horsepower": 265,
+            "item_id": "cbf8fdb3-63f8-4364-8792-6e5bfed13944",
+            "length": 189,
+            "make": "Acura",
+            "mpg_city": 17.129999,
+            "mpg_highway": 23,
+            "origin": "Asia",
+            "price": 36945,
+            "type": "SUV"
+        },
+        {
+            "cylinders": 12,
+            "drivetrain": "Rear",
+            "engine_size": 312.34,
+            "horsepower": 262,
+            "item_id": "d426ac0f-558f-4bf0-be0b-e7e67ad09e8a",
+            "length": 192,
+            "make": "Jaguar",
+            "mpg_city": 13.134,
+            "mpg_highway": 17,
+            "origin": "Europe",
+            "price": 36000,
+            "type": "sedan"
+        }
+    ],
+    "name": "Features",
+    "schema": [
+        {
+            "ColumnName": "item_id",
+            "ColumnType": "uuid",
+            "PK": true
+        },
+        {
+            "ColumnName": "drivetrain",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "cylinders",
+            "ColumnType": "int",
+            "PK": false
+        },
+        {
+            "ColumnName": "horsepower",
+            "ColumnType": "int",
+            "PK": false
+        },
+        {
+            "ColumnName": "engine_size",
+            "ColumnType": "float",
+            "PK": false
+        },
+        {
+            "ColumnName": "length",
+            "ColumnType": "int",
+            "PK": false
+        },
+        {
+            "ColumnName": "make",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "mpg_city",
+            "ColumnType": "float",
+            "PK": false
+        },
+        {
+            "ColumnName": "mpg_highway",
+            "ColumnType": "int",
+            "PK": false
+        },
+        {
+            "ColumnName": "origin",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "price",
+            "ColumnType": "int",
+            "PK": false
+        },
+        {
+            "ColumnName": "type",
+            "ColumnType": "string",
+            "PK": false
+        }
+    ]
+}

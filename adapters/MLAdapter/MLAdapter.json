@@ -1,0 +1,13 @@
+{
+    "architecture": "darwin-amd64",
+    "deploy_command": "sh deploy.sh ",
+    "description": "",
+    "logs_command": "",
+    "name": "MLAdapter",
+    "os": "",
+    "protocol": "",
+    "start_command": "python runpredict.py",
+    "status_command": "",
+    "stop_command": "",
+    "undeploy_command": ""
+}

@@ -1,0 +1,9 @@
+{
+    "id": "1aa674f6-520c-4340-bb4a-fa67a7f4a3a1",
+    "name": "collections",
+    "settings": {
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "USE_PARSER": false
+    },
+    "type": "LOCAL_DATASOURCE_PLUGIN"
+}

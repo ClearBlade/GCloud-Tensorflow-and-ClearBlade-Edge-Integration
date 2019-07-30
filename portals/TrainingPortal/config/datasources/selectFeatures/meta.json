@@ -1,0 +1,14 @@
+{
+    "id": "1bbbca39-89e9-46dc-a264-9f6e1dca7ffc",
+    "name": "selectFeatures",
+    "settings": {
+        "CALL_ON_LOAD": true,
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "SUPPRESS_DATASOURCE_ERRORS": false,
+        "USE_PARSER": false,
+        "code_name": "selectFeatures",
+        "payload": "{}",
+        "refresh_interval": 0
+    },
+    "type": "CB_CODE_SERVICE"
+}

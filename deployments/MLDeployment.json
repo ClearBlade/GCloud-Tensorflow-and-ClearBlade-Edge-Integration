@@ -1,0 +1,44 @@
+{
+    "assets": [
+        {
+            "asset_class": "adaptors",
+            "asset_id": "MLAdapter",
+            "deployment": "MLDeployment",
+            "member": "MLDeployment_deployment_edge_group",
+            "sync": true
+        },
+        {
+            "asset_class": "portals",
+            "asset_id": "TestingPortal",
+            "deployment": "MLDeployment",
+            "member": "MLDeployment_deployment_edge_group",
+            "sync": true
+        },
+        {
+            "asset_class": "AllFeatures",
+            "asset_id": "",
+            "deployment": "MLDeployment",
+            "member": "MLDeployment_deployment_edge_group",
+            "sync": true
+        },
+        {
+            "asset_class": "ModelArchitecture",
+            "asset_id": "",
+            "deployment": "MLDeployment",
+            "member": "MLDeployment_deployment_edge_group",
+            "sync": true
+        },
+        {
+            "asset_class": "CategoricalData",
+            "asset_id": "",
+            "deployment": "MLDeployment",
+            "member": "MLDeployment_deployment_edge_group",
+            "sync": true
+        }
+    ],
+    "description": "",
+    "edges": [
+        "MLEdge"
+    ],
+    "name": "MLDeployment"
+}

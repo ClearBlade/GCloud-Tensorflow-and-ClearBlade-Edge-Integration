@@ -1,0 +1,9 @@
+{
+    "auth": true,
+    "description": "",
+    "messaging_url": "staging.clearblade.com:1883",
+    "name": "DataPreprocessing",
+    "platform_url": "https://staging.clearblade.com",
+    "system_key": "a6c2e6d10bc2f183fca3c7d3d0fe01",
+    "system_secret": "A6C2E6D10BCADB819FABF8FCD94E"
+}

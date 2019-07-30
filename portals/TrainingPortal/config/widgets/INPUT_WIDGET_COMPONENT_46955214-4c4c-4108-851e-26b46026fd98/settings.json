@@ -1,0 +1,22 @@
+{
+    "inputType": "text",
+    "inputVal": {
+        "dataType": "DYNAMIC_DATA_TYPE",
+        "id": "3cf2c41f-e330-4143-b801-916f8f762806",
+        "incoming_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/inputVal/incoming_parser/index.js"
+        }
+    },
+    "target": {
+        "dataType": "DYNAMIC_DATA_TYPE",
+        "force_data": [
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "id": "3cf2c41f-e330-4143-b801-916f8f762806",
+        "outgoing_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/target/outgoing_parser/index.js"
+        }
+    }
+}

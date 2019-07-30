@@ -1,0 +1,13 @@
+{
+    "architecture": "darwin-amd64",
+    "deploy_command": "sh initiate.sh",
+    "description": "",
+    "logs_command": "",
+    "name": "TrainingAdapter",
+    "os": "",
+    "protocol": "",
+    "start_command": "sh train.sh",
+    "status_command": "",
+    "stop_command": "",
+    "undeploy_command": ""
+}
