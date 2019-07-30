@@ -5,8 +5,8 @@
 ### [Overview](#overview-1)
 ### [Setup](#setup-1)
 ### [Usage](#usage-1)
-### [Assets](#assets-1)
 ### [System Overview Diagram](#System-Overview-Diagram-1)
+### [Assets](#assets-1)
 
 
 ## Overview
