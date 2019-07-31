@@ -36,7 +36,7 @@ def create_collection_columns(arr):
 
 def add_data(arr, encoded_dict):
     header = {
-        "ClearBlade-UserToken" : "Ww8U0B-PCkGzzxzunDYaHfwFSLVTYzGxGF-W2hV4vumZkUW-5nwEeMaWVuRkcqdB28LF381qGBIwB0lXlg==",
+        "ClearBlade-UserToken" : usertoken,
         "collectionID" : "9ed0fcd20b98a0f6e3af8ccd859d01"
     }
 
