@@ -65,7 +65,7 @@ This is an ipm package, which contains one or more reusable assets within the ip
 - Open a Terminal on your Machine.
 - Create a new Directory and navigate to that Directory
 - Go to the Platform and Open this System. 
-- Create a new user with **username=*test@email.com*** and **password=*password***
+- Create a new user with **username=*test@email.com*** and **password=*password*** (A user with same creditials might already be present in the system)
 - Use these credentials to open the portals.
 - Navigate to Edges on ClearBlade Platform and Install the *TrainingEdge* : https://docs.clearblade.com/v/4/edge/tutorial/.
 An Adapter is running on this edge which installs all the dependencies required for training the model.
