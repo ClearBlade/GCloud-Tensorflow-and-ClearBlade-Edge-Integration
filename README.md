@@ -31,7 +31,18 @@ This is an ipm package, which contains one or more reusable assets within the ip
   ```
   gcloud init
   ```
-  - Initializing the SDK will prompt you to authorize your account and to select a project or create a new project.
+  - Initializing the SDK will prompt you to authorize your account and to select a project or create a new project. (Creation of project can be through Google Console as well. However you have to execute ```gcloud init``` to select the working project.)
+  ```
+  https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.18563004.-485953982.1561568575
+  ```
+  - If you have created a project, ensure that billing is enabled for your project. More information on:
+  ```
+  https://cloud.google.com/billing/docs/how-to/modify-project
+  ```
+  - Enable the AI Platform ("Cloud Machine Learning Engine") and Compute Engine APIs:
+  ```
+  https://console.cloud.google.com/flows/enableapi?apiid=ml.googleapis.com,compute_component&_ga=2.15003827.-485953982.1561568575
+  ```
   - Create a New Service : 
   ```
   gcloud beta iam service-accounts create <SERVICE_NAME>
