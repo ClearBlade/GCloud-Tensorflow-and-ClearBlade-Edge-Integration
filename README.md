@@ -75,7 +75,6 @@ An Adapter is running on this edge which installs all the dependencies required 
 - Testing on the same machine:
   - Stop the Training Edge : **CTRL-C**
   - Create a new Directory and navigate to that Directory
-  - Change your Directory : **cd Test/**
   - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
   An Adapter is running on this edge which installs all the dependencies required for testing the model. 
   - Go to the portals and click on *TestingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to test the model.
