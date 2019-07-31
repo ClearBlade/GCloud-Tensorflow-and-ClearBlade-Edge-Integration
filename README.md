@@ -63,7 +63,7 @@ This is an ipm package, which contains one or more reusable assets within the ip
 2. Setup on ClearBlade:
 - Before setting up the ClearBlade service, please ensure that you have successfully completed the Google Cloud Platform setup.
 - Open a Terminal on your Machine.
-- Create a new Directory and navigate to that Directory
+- Create a new Directory and navigate to that Directory.
 - Go to the Platform and Open this System. 
 - Create a new user with **username=*test@email.com*** and **password=*password*** (A user with same credentials might already be present in the system.)
 - Use these credentials to open the portals.
@@ -74,14 +74,14 @@ An Adapter is running on this edge which installs all the dependencies required 
 
 - Testing on the same machine:
   - Stop the Training Edge : **CTRL-C**
-  - Create a new Directory and navigate to that Directory
+  - Create a new Directory and navigate to that Directory.
   - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
   An Adapter is running on this edge which installs all the dependencies required for testing the model. 
   - Go to the portals and click on *TestingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to test the model.
   
  - Testing on the different machine:
    - Open a Terminal on your Machine.
-   - Create a new Directory and navigate to that Directory
+   - Create a new Directory and navigate to that Directory.
    - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
    An Adapter is running on this edge which installs all the dependencies required for testing the model. 
    - Go to the portals and click on *TestingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to test the model.
