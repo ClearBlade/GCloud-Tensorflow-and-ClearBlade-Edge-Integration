@@ -137,8 +137,9 @@ def normalize(string):
     df = pd.DataFrame(test_string, index=[0])
     df = df.replace('',0.0)
 
-    for i in to_clean:
-        df[i] = df[i].astype('float32')
+    if (len(to_clean) != 0):
+        for i in to_clean:
+            df[i] = df[i].astype('float32')
 
     _LABEL_COL = df.pop(label)
 
@@ -155,6 +156,7 @@ def normalize(string):
         df[column] -= msobj[column]['mean']
         df[column] /= msobj[column]['std']
 
+    df.fillna(0, inplace=True)
 
     cat_columns = df.select_dtypes(['object']).columns
     cat_columns = list(cat_columns)
@@ -162,15 +164,16 @@ def normalize(string):
     testData = df.to_dict('records')
     testData = testData[0]
 
-    with open("categorical_data.json",'r') as fp:
-        data = fp.read()
-        catobj = json.loads(data)
+    if(len(cat_columns) != 0):
+        with open("categorical_data.json",'r') as fp:
+            data = fp.read()
+            catobj = json.loads(data)
 
-    for i in list(cat_columns):
-        inputVal = test_string[i]
-        toCheck = catobj[i]
-        toChange = toCheck[inputVal]
-        testData[i] = toChange
+        for i in list(cat_columns):
+            inputVal = test_string[i]
+            toCheck = catobj[i]
+            toChange = toCheck[inputVal]
+            testData[i] = toChange
 
     filtered_test_data = list(testData.values())
 

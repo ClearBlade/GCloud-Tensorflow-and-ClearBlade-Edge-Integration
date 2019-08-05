@@ -18,13 +18,14 @@ parser = (ctx) => {
       cat_features.push(item["Features"]);
     }
   }
-  
-  if(cat_features == undefined){
+
+  if(cat_features == undefined || cat_features.length == 0){
     alert("Categorical Data not found")
   } else {
     datasources.catCols.sendData({"categorical" : cat_features});
   }
-  // console.log(cat_features)
+  
+  //console.log(ctx.datasource)
 
   var data = []
   for (var i=0; i<ctx.datasource.DATA.length; i++){
@@ -50,11 +51,6 @@ parser = (ctx) => {
     data: data,
     count: featureData.TOTAL,
     keyColumn: 'item_id',
-    // highlightId: '',
-    // overrideFieldSettings: {},
-    // columns: [ // whitelists what columns work for sort and filter and create modal
-    //   { ColumnName: 'name', ColumnType: 'string', custom: true },
-    // ],
   }          
   return gridData
 }

@@ -94,7 +94,7 @@ def main():
 
 arr = ['price','horsepower','normalized_losses','peak_rpm','bore','stroke']
 df, label, to_clean, token = main()
-df = convert_to_float(df, arr)
+df = convert_to_float(df, to_clean)
 df, cat_data = create_categorical_mapping(df)
 meanstd = create_mean_std_mapping(df, label)
 status_code = send_data_to_collections(cat_data, meanstd, to_clean, label, token)

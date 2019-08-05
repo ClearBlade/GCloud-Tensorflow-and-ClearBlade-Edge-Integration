@@ -160,10 +160,9 @@ function selectFeatures(req, resp) {
     if(err){
       resp.error("fetch error 4: " + JSON.stringify(data));
     } else{
+        log(data.TOTAL);
         var data = data["DATA"];
-        //log(data);
-        // if(data.length == 0)
-        log("This is the feature ID: " + featureDataset);
+        //log("This is the feature ID: " + featureDataset);
         var col = ClearBlade.Collection( {collectionName: featureDataset} );
         col.create(data, function(err, data){
           if(err){
@@ -183,9 +182,8 @@ function selectFeatures(req, resp) {
   var features = req.params.selectColumns;
   var feature_datatypes = req.params.dataTypes;
   
-
   var query = ClearBlade.Query({collectionName:collection});
-  query.setPage(500);
+  query.setPage(1);
   query.fetch(checkFeatures); 
 
   var query3 = ClearBlade.Query({collectionName:"AllFeatures"});
@@ -195,6 +193,7 @@ function selectFeatures(req, resp) {
   query2.fetch(checkIfPresent);
 
   var query1 = ClearBlade.Query({collectionName:collection});
+  query1.setPage(1000);
   query1.columns(features);
   query1.fetch(selectFeatures);
 }

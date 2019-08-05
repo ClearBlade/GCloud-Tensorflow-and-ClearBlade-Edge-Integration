@@ -1,6 +1,20 @@
 {
     "items": [
         {
+            "cylinders": 0,
+            "drivetrain": "",
+            "engine_size": null,
+            "horsepower": 0,
+            "item_id": "27a5fcb6-8b57-498f-9973-3a67e49562dd",
+            "length": 0,
+            "make": "",
+            "mpg_city": null,
+            "mpg_highway": null,
+            "origin": "",
+            "price": 0,
+            "type": ""
+        },
+        {
             "cylinders": 6,
             "drivetrain": "Rear",
             "engine_size": 209.34,
@@ -27,6 +41,20 @@
             "origin": "USA",
             "price": 6692,
             "type": "SUV"
+        },
+        {
+            "cylinders": 0,
+            "drivetrain": "",
+            "engine_size": null,
+            "horsepower": 0,
+            "item_id": "766fd4e8-1465-48a5-8382-aaf29c1ae41b",
+            "length": 0,
+            "make": "",
+            "mpg_city": null,
+            "mpg_highway": null,
+            "origin": "",
+            "price": 0,
+            "type": ""
         },
         {
             "cylinders": 4,

@@ -17,5 +17,5 @@
     },
     "fontColor": "#ffffff",
     "htmlId": "featureButton",
-    "label": "Generate Feature Dataset"
+    "label": "Create Feature Collection"
 }

@@ -21,12 +21,16 @@
     "hideSubmit": false,
     "isReadOnly": false,
     "listSource": {
-        "dataType": "CALCULATED_DATA_TYPE",
+        "dataType": "DYNAMIC_DATA_TYPE",
         "force_data": [
             "CALCULATED_DATA_TYPE",
             "DYNAMIC_DATA_TYPE"
         ],
-        "value": "./parsers/listSource/incoming_parser/index.js"
+        "id": "f6edb17d-3fcc-4716-ad9e-92428113bf43",
+        "incoming_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/listSource/incoming_parser/index.js"
+        }
     },
     "noDataText": "No data",
     "sliderColor": "#007bff",

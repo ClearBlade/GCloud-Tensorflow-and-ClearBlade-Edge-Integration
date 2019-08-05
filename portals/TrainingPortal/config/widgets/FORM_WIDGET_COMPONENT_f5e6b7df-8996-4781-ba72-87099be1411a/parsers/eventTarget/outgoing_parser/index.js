@@ -7,35 +7,34 @@ parser = (ctx) => {
   var archFile = datasources.archFile.latestData();
   var trainFile = datasources.trainFile.latestData();
 
-  // if(dataFile == null || archFile == null || trainFile == null) {
-  //   alert("Please provide the necessary files for training");
-  //   return;
-  // }
+  if(dataFile == undefined || archFile == undefined || trainFile == undefined) {
+    console.log("Selecting default model architecture from the collections.")
+  } else {
+    var encoded_data = btoa(dataFile);
+    var encoded_arch = btoa(archFile);
+    var encoded_train = btoa(trainFile);
 
-  var encoded_data = btoa(dataFile);
-  var encoded_arch = btoa(archFile);
-  var encoded_train = btoa(trainFile);
+    var url = "https://staging.clearblade.com/api/v/1/collection/a6c2e6d10bc2f183fca3c7d3d0fe01/TrainingFiles"
 
-  var url = "https://staging.clearblade.com/api/v/1/collection/a6c2e6d10bc2f183fca3c7d3d0fe01/TrainingFiles"
+    var header = {
+      "ClearBlade-UserToken" : datasources.authtoken.latestData(),
+      "systemKey" : "92c4d0d30b9884faaac380f694b201",
+      "collectionName" : "TrainingFiles"
+    }
 
-  var header = {
-    "ClearBlade-UserToken" : datasources.authtoken.latestData(),
-    "systemKey" : "92c4d0d30b9884faaac380f694b201",
-    "collectionName" : "TrainingFiles"
+    var body = {
+      "datafile" : encoded_data,
+      "archfile" : encoded_arch,
+      "trainfile" : encoded_train
+    }
+
+    fetch(url, {
+          method:'POST',
+          headers:header,
+          body:JSON.stringify(body)
+        }).then((resp) => resp.json())
+        .then((data) => console.log(data));
   }
-
-  var body = {
-    "datafile" : encoded_data,
-    "archfile" : encoded_arch,
-    "trainfile" : encoded_train
-  }
-
-  fetch(url, {
-        method:'POST',
-        headers:header,
-        body:JSON.stringify(body)
-      }).then((resp) => resp.json())
-      .then((data) => console.log(data));
 
   var data = ctx.widget.data;
   //console.log(data)

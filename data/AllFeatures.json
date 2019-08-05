@@ -1,134 +1,134 @@
 {
     "items": [
         {
-            "dtypes": "int",
-            "features": "symboling",
-            "item_id": "05fa43a2-a2d4-4249-800c-411d2c84ffc5"
+            "dtypes": "string",
+            "features": "body_style",
+            "item_id": "112d5ffb-a233-4064-969c-6e7abdd55503"
         },
         {
-            "dtypes": "string",
-            "features": "horsepower",
-            "item_id": "06b4899f-92ff-48c4-b0be-b808d045efc3"
-        },
-        {
-            "dtypes": "string",
-            "features": "drive_wheels",
-            "item_id": "18267977-faf1-41ed-8eb7-77d3ce644229"
+            "dtypes": "float",
+            "features": "compression_ratio",
+            "item_id": "141d1c2a-e898-411d-8b35-a78a58b8691e"
         },
         {
             "dtypes": "string",
             "features": "bore",
-            "item_id": "25b0a1a2-9454-4a83-9354-78e752e5c027"
-        },
-        {
-            "dtypes": "string",
-            "features": "num_of_cylinders",
-            "item_id": "2813a408-e742-4221-8a0a-e45c966c2606"
-        },
-        {
-            "dtypes": "int",
-            "features": "curb_weight",
-            "item_id": "292691f2-19c0-46ee-980d-28ecdcdb2a26"
-        },
-        {
-            "dtypes": "string",
-            "features": "price",
-            "item_id": "36e86c92-caf2-4b0f-8bf5-5e82aa2c7547"
-        },
-        {
-            "dtypes": "string",
-            "features": "aspiration",
-            "item_id": "3c9ec40e-c99f-413d-97a9-7427986eec09"
-        },
-        {
-            "dtypes": "int",
-            "features": "engine_size",
-            "item_id": "3dd8ffd8-4583-4380-9b4b-a6a728cfd062"
-        },
-        {
-            "dtypes": "string",
-            "features": "engine_type",
-            "item_id": "3ea2cf31-b9d9-42a5-86f0-b5937ac33e93"
-        },
-        {
-            "dtypes": "int",
-            "features": "highway_mpg",
-            "item_id": "400c20a3-23fc-4a52-8700-5ecbe4dcc486"
-        },
-        {
-            "dtypes": "float",
-            "features": "height",
-            "item_id": "4f3b72d0-13c8-4364-ab00-2f141f619cbd"
-        },
-        {
-            "dtypes": "float",
-            "features": "length",
-            "item_id": "5ce50390-b699-4d04-b120-a6a3521cfdac"
-        },
-        {
-            "dtypes": "float",
-            "features": "wheel_base",
-            "item_id": "81d76875-e47f-443f-b041-52f5dc6dc848"
-        },
-        {
-            "dtypes": "string",
-            "features": "body_style",
-            "item_id": "88e3c5d0-6ec4-4f95-a64b-08fb835cf1c7"
-        },
-        {
-            "dtypes": "string",
-            "features": "num_of_doors",
-            "item_id": "929eec7b-2d65-4af6-9aa0-c4869a8984cb"
-        },
-        {
-            "dtypes": "string",
-            "features": "engine_location",
-            "item_id": "9e86d4a5-2566-45d7-9e0f-f702684ddac8"
-        },
-        {
-            "dtypes": "string",
-            "features": "fuel_system",
-            "item_id": "a4d4c817-a66a-4ee7-81fa-f12a68eaddcd"
-        },
-        {
-            "dtypes": "string",
-            "features": "normalized_losses",
-            "item_id": "b4d122f8-db94-4ba3-ba76-53eb1f4f839f"
-        },
-        {
-            "dtypes": "int",
-            "features": "city_mpg",
-            "item_id": "d6328553-3346-4bbb-a325-22d549351b1c"
-        },
-        {
-            "dtypes": "string",
-            "features": "stroke",
-            "item_id": "dd5215a3-3d3e-477b-9c95-479fc7cf2314"
+            "item_id": "18ef9fb3-b486-4e2d-8710-2b2ee57b6b84"
         },
         {
             "dtypes": "string",
             "features": "peak_rpm",
-            "item_id": "e8180601-4394-466c-9490-d50713b9151a"
+            "item_id": "2bc4f93c-adc0-4ba6-bfbd-3c7760bc2682"
         },
         {
-            "dtypes": "int",
-            "features": "compression_ratio",
-            "item_id": "e9b3e670-ebf4-45a9-980e-d5313ab99f35"
+            "dtypes": "float",
+            "features": "wheel_base",
+            "item_id": "40346b55-9e39-4576-a5f7-32e65867d3fc"
         },
         {
             "dtypes": "string",
             "features": "make",
-            "item_id": "ebc7b393-5e19-47a8-a082-688b9c6a0097"
+            "item_id": "40acaaa0-e463-42b5-81df-051564c45e27"
+        },
+        {
+            "dtypes": "string",
+            "features": "normalized_losses",
+            "item_id": "6206180c-2ed7-4f90-9b38-0d42e2f31798"
+        },
+        {
+            "dtypes": "float",
+            "features": "engine_size",
+            "item_id": "72388723-6f21-4191-98be-4f3fba382d02"
+        },
+        {
+            "dtypes": "string",
+            "features": "stroke",
+            "item_id": "72e8af79-be15-49f3-b1c8-c5696dfce530"
+        },
+        {
+            "dtypes": "float",
+            "features": "symboling",
+            "item_id": "8007d037-41b3-453c-8f89-e51874a8d982"
+        },
+        {
+            "dtypes": "float",
+            "features": "city_mpg",
+            "item_id": "8c9f5c0e-0c28-48c0-9a67-270ecb959592"
+        },
+        {
+            "dtypes": "string",
+            "features": "engine_location",
+            "item_id": "90c85f96-4c4d-48d8-bc56-b8b1bc5ec82d"
+        },
+        {
+            "dtypes": "string",
+            "features": "num_of_cylinders",
+            "item_id": "99f71a9c-cda8-4169-9cdd-2bf5b361a3cd"
+        },
+        {
+            "dtypes": "float",
+            "features": "height",
+            "item_id": "9b8f08c0-3e0a-4ba3-8e13-fcb2bebf25bd"
+        },
+        {
+            "dtypes": "string",
+            "features": "aspiration",
+            "item_id": "a048ab04-2bea-48cf-89d4-813e5f296871"
+        },
+        {
+            "dtypes": "float",
+            "features": "length",
+            "item_id": "aa7c7af7-cff8-4b68-8271-1ff0342e2744"
+        },
+        {
+            "dtypes": "string",
+            "features": "engine_type",
+            "item_id": "ae4ed7a9-a151-4e77-8384-1866ec60a0ae"
+        },
+        {
+            "dtypes": "float",
+            "features": "curb_weight",
+            "item_id": "c06c5973-5e2b-4f78-bce4-743c2a1a1626"
         },
         {
             "dtypes": "string",
             "features": "fuel_type",
-            "item_id": "f5afedb6-5c60-4734-8a33-76a7dcafb2a8"
+            "item_id": "d6003158-e1a6-46f9-8255-8ae902842691"
+        },
+        {
+            "dtypes": "string",
+            "features": "num_of_doors",
+            "item_id": "d85e230d-335f-45dd-b096-50d728259a50"
+        },
+        {
+            "dtypes": "string",
+            "features": "drive_wheels",
+            "item_id": "e51f389f-d3ff-4344-ade9-c17914934283"
         },
         {
             "dtypes": "float",
             "features": "width",
-            "item_id": "fca2601b-3d59-46ed-9f62-37a1ac94f892"
+            "item_id": "e8870ffd-0b10-4d8c-810e-2901df317e9b"
+        },
+        {
+            "dtypes": "string",
+            "features": "horsepower",
+            "item_id": "ea95a650-1708-4f9e-bbd9-67efb3f2bea2"
+        },
+        {
+            "dtypes": "string",
+            "features": "price",
+            "item_id": "f1d5d19f-857d-44c2-8c2e-d74e483b01b2"
+        },
+        {
+            "dtypes": "float",
+            "features": "highway_mpg",
+            "item_id": "fce82b40-dedd-4f6a-9618-db6fe0388d0a"
+        },
+        {
+            "dtypes": "string",
+            "features": "fuel_system",
+            "item_id": "fd45e0ab-efdf-4379-b9a5-32cf574553f2"
         }
     ],
     "name": "AllFeatures",

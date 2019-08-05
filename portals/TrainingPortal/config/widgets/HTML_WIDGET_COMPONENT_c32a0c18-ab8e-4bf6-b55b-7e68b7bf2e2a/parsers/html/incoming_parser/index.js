@@ -5,6 +5,7 @@ var buttonGroupClick = function(event){
     // $(event.target).removeClass("btn-secondary")
     // $(event.target).addClass("btn-outline-primary")
     CB_PORTAL.selectPage(event.target.value);
+    datasources.clicked.sendData({"status":1});
 }
 
 $(".headerNavButton").click(function(event){

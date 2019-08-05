@@ -4,7 +4,7 @@
 
 CB_PORTAL.Loader.hide('crudtrain')
 
-datasources.features.sendData({"Features":[]});
+//datasources.features.sendData({"Features":[]});
 //datasources.featureCollection.sendData(" ");
 
 parser = (ctx) => {
@@ -18,6 +18,7 @@ parser = (ctx) => {
     // columns: [ // whitelists what columns work for sort and filter and create modal
     //   { ColumnName: 'name', ColumnType: 'string', custom: true },
     // ],
-  }          
+  }   
+      
   return gridData
 }

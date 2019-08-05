@@ -205,7 +205,7 @@
     },
     "highlightTextColor": "#fff",
     "oddStripeColor": "#f5f5f5",
-    "pageSize": 25,
+    "pageSize": 50,
     "searchPlaceholderText": "search",
     "showSearchBar": false,
     "textColor": "#000000",

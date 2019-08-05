@@ -1,13 +1,6 @@
 {
     "assets": [
         {
-            "asset_class": "adaptors",
-            "asset_id": "TrainingAdapter",
-            "deployment": "TrainingDeployment",
-            "member": "TrainingDeployment_deployment_edge_group",
-            "sync": true
-        },
-        {
             "asset_class": "ModelArchitecture",
             "asset_id": "",
             "deployment": "TrainingDeployment",
@@ -30,20 +23,6 @@
         },
         {
             "asset_class": "SampleCollection",
-            "asset_id": "",
-            "deployment": "TrainingDeployment",
-            "member": "TrainingDeployment_deployment_edge_group",
-            "sync": true
-        },
-        {
-            "asset_class": "Features",
-            "asset_id": "",
-            "deployment": "TrainingDeployment",
-            "member": "TrainingDeployment_deployment_edge_group",
-            "sync": true
-        },
-        {
-            "asset_class": "FeaturesDataset",
             "asset_id": "",
             "deployment": "TrainingDeployment",
             "member": "TrainingDeployment_deployment_edge_group",
@@ -80,6 +59,13 @@
         {
             "asset_class": "services",
             "asset_id": "clearMissingData",
+            "deployment": "TrainingDeployment",
+            "member": "TrainingDeployment_deployment_edge_group",
+            "sync": true
+        },
+        {
+            "asset_class": "adaptors",
+            "asset_id": "TrainingAdapter",
             "deployment": "TrainingDeployment",
             "member": "TrainingDeployment_deployment_edge_group",
             "sync": true

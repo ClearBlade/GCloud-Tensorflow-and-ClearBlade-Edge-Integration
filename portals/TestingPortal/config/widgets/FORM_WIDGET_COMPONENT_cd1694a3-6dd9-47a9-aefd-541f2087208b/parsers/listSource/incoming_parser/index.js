@@ -6,6 +6,10 @@ parser = (ctx) => {
   var dataF = datasources.features.latestData();
   var features = dataF.Features;
 
+  if(features.length == 0){
+    return;
+  }
+
   var categories = datasources.CategoricalData.latestData()
   var last = categories.length - 1
   var category = categories[last].data;

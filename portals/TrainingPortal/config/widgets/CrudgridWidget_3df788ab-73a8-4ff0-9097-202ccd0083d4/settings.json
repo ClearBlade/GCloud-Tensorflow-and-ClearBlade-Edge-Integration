@@ -5,7 +5,7 @@
             "CALCULATED_DATA_TYPE",
             "DYNAMIC_DATA_TYPE"
         ],
-        "id": "3cf2c41f-e330-4143-b801-916f8f762806",
+        "id": "0569b808-33d2-4632-966a-d869c6b59498",
         "outgoing_parser": {
             "isDebugOn": false,
             "value": "./parsers/addItemParser/outgoing_parser/index.js"
@@ -24,7 +24,7 @@
             "CALCULATED_DATA_TYPE",
             "DYNAMIC_DATA_TYPE"
         ],
-        "id": "3cf2c41f-e330-4143-b801-916f8f762806",
+        "id": "0569b808-33d2-4632-966a-d869c6b59498",
         "outgoing_parser": {
             "isDebugOn": false,
             "value": "./parsers/deleteItemParser/outgoing_parser/index.js"
@@ -37,7 +37,7 @@
         "force_data": [
             "CALCULATED_DATA_TYPE"
         ],
-        "id": "3cf2c41f-e330-4143-b801-916f8f762806",
+        "id": "0569b808-33d2-4632-966a-d869c6b59498",
         "outgoing_parser": {
             "isDebugOn": false,
             "value": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.widget;\n}"
@@ -50,7 +50,7 @@
             "CALCULATED_DATA_TYPE",
             "DYNAMIC_DATA_TYPE"
         ],
-        "id": "3cf2c41f-e330-4143-b801-916f8f762806",
+        "id": "0569b808-33d2-4632-966a-d869c6b59498",
         "value": "./parsers/fetchGridData/incoming_parser/index.js"
     },
     "gridData": {
@@ -59,7 +59,7 @@
             "CALCULATED_DATA_TYPE",
             "DYNAMIC_DATA_TYPE"
         ],
-        "id": "3cf2c41f-e330-4143-b801-916f8f762806",
+        "id": "0569b808-33d2-4632-966a-d869c6b59498",
         "incoming_parser": {
             "isDebugOn": false,
             "value": "./parsers/gridData/incoming_parser/index.js"
@@ -73,7 +73,7 @@
             "CALCULATED_DATA_TYPE",
             "DYNAMIC_DATA_TYPE"
         ],
-        "id": "3cf2c41f-e330-4143-b801-916f8f762806",
+        "id": "0569b808-33d2-4632-966a-d869c6b59498",
         "outgoing_parser": {
             "isDebugOn": false,
             "value": "./parsers/highlightItemParser/outgoing_parser/index.js"
@@ -82,7 +82,7 @@
     "highlightTextColor": "#fff",
     "htmlId": "crudfeature",
     "oddStripeColor": "#f5f5f5",
-    "pageSize": 200,
+    "pageSize": 101,
     "searchPlaceholderText": "search",
     "showSearchBar": false,
     "textColor": "#000000",
@@ -92,7 +92,7 @@
             "CALCULATED_DATA_TYPE",
             "DYNAMIC_DATA_TYPE"
         ],
-        "id": "3cf2c41f-e330-4143-b801-916f8f762806",
+        "id": "0569b808-33d2-4632-966a-d869c6b59498",
         "outgoing_parser": {
             "isDebugOn": false,
             "value": "./parsers/updateItemParser/outgoing_parser/index.js"

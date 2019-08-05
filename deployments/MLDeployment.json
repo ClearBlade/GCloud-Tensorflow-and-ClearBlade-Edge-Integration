@@ -1,15 +1,8 @@
 {
     "assets": [
         {
-            "asset_class": "adaptors",
-            "asset_id": "MLAdapter",
-            "deployment": "MLDeployment",
-            "member": "MLDeployment_deployment_edge_group",
-            "sync": true
-        },
-        {
-            "asset_class": "portals",
-            "asset_id": "TestingPortal",
+            "asset_class": "CategoricalData",
+            "asset_id": "",
             "deployment": "MLDeployment",
             "member": "MLDeployment_deployment_edge_group",
             "sync": true
@@ -29,8 +22,15 @@
             "sync": true
         },
         {
-            "asset_class": "CategoricalData",
-            "asset_id": "",
+            "asset_class": "portals",
+            "asset_id": "TestingPortal",
+            "deployment": "MLDeployment",
+            "member": "MLDeployment_deployment_edge_group",
+            "sync": true
+        },
+        {
+            "asset_class": "adaptors",
+            "asset_id": "MLAdapter",
             "deployment": "MLDeployment",
             "member": "MLDeployment_deployment_edge_group",
             "sync": true

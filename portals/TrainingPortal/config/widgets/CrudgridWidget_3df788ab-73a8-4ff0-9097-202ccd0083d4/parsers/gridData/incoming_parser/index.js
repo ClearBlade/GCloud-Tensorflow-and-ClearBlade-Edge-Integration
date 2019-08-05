@@ -1,13 +1,19 @@
 parser = (ctx) => {
 
-  //const collection_id = datasources.collectionID.latestData();
+  // const collection_id = datasources.collectionID.latestData();
   // const systemKey = "a6c2e6d10bc2f183fca3c7d3d0fe01"
   // const collection_name = datasources.featureCollection.latestData();
+  // const token = datasources.authtoken.latestData();
+  
+  // if(collection_name == null || collection_name==undefined){
+  //   return;
+  // }
+
   // var url = "https://staging.clearblade.com/api/v/1/collection/" + systemKey + "/" + collection_name;
 
   // function getData(url){
   //   var header = {
-  //     "ClearBlade-UserToken" : "AIRXRfm1II1IgDvkYDLFO0V0Io9ZibEQ1PHZ-oZQshrPDgdd9R9POs21vvI8SxTkUQhueadrF6OS92gfnw==",
+  //     "ClearBlade-UserToken" : token,
   //     "systemKey" : systemKey,
   //     "collectionName" : collection_name
   //   };

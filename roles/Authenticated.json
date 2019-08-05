@@ -47,6 +47,10 @@
             },
             {
                 "Level": 1,
+                "Name": "numberOfNulls"
+            },
+            {
+                "Level": 1,
                 "Name": "oneHotEncoding"
             },
             {
@@ -81,6 +85,12 @@
                 "Columns": [],
                 "Items": [],
                 "Level": 15,
+                "Name": "FeaturesDataset"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
                 "Name": "MainCollection"
             },
             {
@@ -99,7 +109,19 @@
                 "Columns": [],
                 "Items": [],
                 "Level": 15,
+                "Name": "SensorData"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
                 "Name": "TrainingFiles"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "myFeatures"
             }
         ],
         "Deployments": {

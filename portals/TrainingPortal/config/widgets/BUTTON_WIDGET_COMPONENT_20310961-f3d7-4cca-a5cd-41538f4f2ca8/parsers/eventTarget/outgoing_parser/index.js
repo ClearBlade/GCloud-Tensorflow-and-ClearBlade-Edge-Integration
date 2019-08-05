@@ -85,7 +85,10 @@
         promises.push(promise);
       }
 
-      Promise.all(promises).then(() => generateData());
+      Promise.all(promises).then(() => {       
+        datasources.createFlag.sendData({"status":1});
+        alert("Collection Created. Provide permissions to the collection from the platform.")
+      });
 
     } else {
       for(var i=0; i<features.length; i++){
@@ -112,50 +115,51 @@
         promises.push(promise);
       }
 
-      console.log("Collection Created");
-      Promise.all(promises).then(() => generateData());
-
+      Promise.all(promises).then(() => {
+        datasources.createFlag.sendData({"status":1});
+        alert("Collection Created. Provide permissions to the collection from the platform.")
+      });
     }
   }
 
-  var generateData = function(){
-    console.log("Now inside generate");
-    var features = data2.Features;
-    var selectColumns = [];
-    var datatypes = [];
+  // var generateData = function(){
+  //   console.log("Now inside generate");
+  //   var features = data2.Features;
+  //   var selectColumns = [];
+  //   var datatypes = [];
 
-    if (features.length == 0){
-      var data3 = datasources.allFeatures.latestData();
-      var features = data3.Features;
-      for(var i=0; i<features.length; i++){
-        selectColumns.push(features[i]["Features"]);
-        datatypes.push(features[i].DataType);
-      }
+  //   if (features.length == 0){
+  //     var data3 = datasources.allFeatures.latestData();
+  //     var features = data3.Features;
+  //     for(var i=0; i<features.length; i++){
+  //       selectColumns.push(features[i]["Features"]);
+  //       datatypes.push(features[i].DataType);
+  //     }
       
-      datasources.selectFeatures.sendData({"CollectionName":data, "featureCollection": data1, "selectColumns":selectColumns, "dataTypes":datatypes});
+  //     datasources.selectFeatures.sendData({"CollectionName":data, "featureCollection": data1, "selectColumns":selectColumns, "dataTypes":datatypes});
           
-      var send_data = []
+  //     var send_data = []
 
-      for(var i=0; i<features.length; i++){
-        var item = features[i];
-        var field = {"Features":item.Features, "DataType":item.DataType, "item_id":item.item_id};
-        send_data.push(field);
-      }
+  //     for(var i=0; i<features.length; i++){
+  //       var item = features[i];
+  //       var field = {"Features":item.Features, "DataType":item.DataType, "item_id":item.item_id};
+  //       send_data.push(field);
+  //     }
 
-      datasources.features.sendData({"Features":send_data});
+  //     datasources.features.sendData({"Features":send_data});
 
-      alert("Feature Dataset generated successfully");
-      return;
-    }
+  //     alert("Feature Dataset generated successfully");
+  //     return;
+  //   }
 
-    for(var i=0; i<features.length; i++){
-      selectColumns.push(features[i]["Features"]);
-      datatypes.push(features[i].DataType);
-    }
+  //   for(var i=0; i<features.length; i++){
+  //     selectColumns.push(features[i]["Features"]);
+  //     datatypes.push(features[i].DataType);
+  //   }
 
-    datasources.selectFeatures.sendData({"CollectionName":data, "featureCollection": data1, "selectColumns":selectColumns, "dataTypes":datatypes});
-    alert("Feature Dataset generated successfully");
-  }
+  //   datasources.selectFeatures.sendData({"CollectionName":data, "featureCollection": data1, "selectColumns":selectColumns, "dataTypes":datatypes});
+  //   alert("Feature Dataset generated successfully");
+  // }
 
   postData(url, data1)
     .then((data) => createColumns(data))

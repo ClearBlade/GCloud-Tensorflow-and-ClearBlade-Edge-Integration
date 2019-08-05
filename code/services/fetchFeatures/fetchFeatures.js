@@ -21,11 +21,12 @@ function fetchFeatures(req, resp) {
           if(typeof fetchedData[keys[i]] != "number"){
             datatypes.push(typeof fetchedData[keys[i]]);
           } else {
-            if (fetchedData[keys[i]] % 1 === 0){
-              datatypes.push("int");
-            } else {
-              datatypes.push("float");
-            }
+            // if (fetchedData[keys[i]] % 1 === 0){
+            //   datatypes.push("int");
+            // } else {
+            //   datatypes.push("float");
+            // }
+            datatypes.push("float");
           }
           var x = Math.floor((Math.random() * 10000000) + 1);
           itemID.push(x);          

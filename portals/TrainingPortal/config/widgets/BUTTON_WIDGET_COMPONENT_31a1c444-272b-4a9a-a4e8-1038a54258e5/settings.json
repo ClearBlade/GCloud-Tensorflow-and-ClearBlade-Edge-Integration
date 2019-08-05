@@ -4,16 +4,16 @@
     "backgroundHoverColor": "#71ef9d",
     "borderColor": "#cccccc",
     "eventTarget": {
-        "dataType": "CALCULATED_DATA_TYPE",
+        "dataType": "DYNAMIC_DATA_TYPE",
         "force_data": [
             "CALCULATED_DATA_TYPE",
             "DYNAMIC_DATA_TYPE"
         ],
+        "id": "0569b808-33d2-4632-966a-d869c6b59498",
         "outgoing_parser": {
             "isDebugOn": false,
-            "value": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.widget;\n}"
-        },
-        "value": "./parsers/eventTarget/outgoing_parser/index.js"
+            "value": "./parsers/eventTarget/outgoing_parser/index.js"
+        }
     },
     "fontColor": "#ffffff",
     "label": "Refresh"

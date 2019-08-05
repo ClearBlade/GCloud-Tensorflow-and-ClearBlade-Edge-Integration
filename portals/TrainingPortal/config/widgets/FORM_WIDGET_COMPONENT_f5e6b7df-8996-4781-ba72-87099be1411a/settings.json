@@ -220,6 +220,71 @@
             "name": "activation3",
             "orderIdx": 27
         },
+        "batchsize": {
+            "dataType": "int",
+            "defaultValue": "1",
+            "display": true,
+            "inputType": "number",
+            "key": "1db7e979-e5ad-43b1-84b1-f20253ea8c1e",
+            "label": "Batch Size",
+            "layout": {
+                "lg": {
+                    "h": 4,
+                    "i": "batchsize",
+                    "minH": 3,
+                    "moved": false,
+                    "static": false,
+                    "w": 5,
+                    "x": 25,
+                    "y": 63.3
+                },
+                "md": {
+                    "h": 5,
+                    "i": "batchsize",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 84
+                },
+                "sm": {
+                    "h": 5,
+                    "i": "batchsize",
+                    "minH": 3,
+                    "moved": false,
+                    "static": false,
+                    "w": 18,
+                    "x": 0,
+                    "y": 87.3
+                },
+                "xl": {
+                    "h": 5,
+                    "i": "batchsize",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 84
+                },
+                "xs": {
+                    "h": 5,
+                    "i": "batchsize",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 84
+                },
+                "xxs": {
+                    "h": 5,
+                    "i": "batchsize",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 84
+                }
+            },
+            "name": "batchsize",
+            "orderIdx": 28,
+            "placeholder": ""
+        },
         "bucket": {
             "dataType": "string",
             "display": true,
@@ -367,12 +432,12 @@
             "label": "Number of Epochs",
             "layout": {
                 "lg": {
-                    "h": 5,
+                    "h": 4,
                     "i": "epochs",
                     "minH": 3,
                     "moved": false,
                     "static": false,
-                    "w": 10,
+                    "w": 5,
                     "x": 20,
                     "y": 63.3
                 },
@@ -459,7 +524,7 @@
                     "static": false,
                     "w": 18,
                     "x": 0,
-                    "y": 97.3
+                    "y": 102.3
                 },
                 "xl": {
                     "h": 5,
@@ -576,7 +641,7 @@
                     "static": false,
                     "w": 10,
                     "x": 20,
-                    "y": 68.3
+                    "y": 67.3
                 },
                 "md": {
                     "h": 5,
@@ -944,7 +1009,7 @@
                     "static": false,
                     "w": 18,
                     "x": 0,
-                    "y": 107.3
+                    "y": 112.3
                 },
                 "xl": {
                     "h": 5,
@@ -1118,7 +1183,8 @@
             "dropdownOptions": [
                 "Mean Squared Error",
                 "Mean Absolute Error",
-                "Cosine Similarity"
+                "Binary Cross Entropy",
+                "Sparse Categorical Cross Entropy"
             ],
             "inputType": "option",
             "key": "5a03b6ea-2fde-4cc6-82fc-53c1881ccb04",
@@ -1150,7 +1216,7 @@
                     "static": false,
                     "w": 18,
                     "x": 0,
-                    "y": 87.3
+                    "y": 92.3
                 },
                 "xl": {
                     "h": 5,
@@ -1216,7 +1282,7 @@
                     "static": false,
                     "w": 18,
                     "x": 0,
-                    "y": 92.3
+                    "y": 97.3
                 },
                 "xl": {
                     "h": 5,
@@ -1496,7 +1562,7 @@
                     "static": false,
                     "w": 18,
                     "x": 0,
-                    "y": 102.3
+                    "y": 107.3
                 },
                 "xl": {
                     "h": 5,
