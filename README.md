@@ -97,7 +97,8 @@ The ```Training of the model``` can be done by the following steps:
 - Open the TrainingPortal from the Portals 
 - Click on **View Training Dataset** Tab to select the collection for training the model and then click **NEXT**.
 - The next tab is the **Feature Selection** Tab which helps you to select the meaningful features that you want for training the model. 
-- Select the features, provide a unique *Feature Name* and click on **Generate Feature Dataset** to create a new collection with only those features which you have selected. Click **NEXT** to continue.
+- Select the features, provide a unique *Feature Name* and click on **Create Feature Collection** to create a new collection with only those features which you have selected. 
+- Go to the collections and give the newly generated collection permissions. Click on **Copy Feature Data** to copy the data and then click **NEXT** to continue.
 - The next tab is the **Clean Data** Tab which helps you to remove any empty rows from the data by clicking on **Delete Empty Rows** and handle categorical Data by clicking on **View Categorical Data**. Once cleaning of data is done, click **NEXT** to proceed.
 - This tab is the **Train Model** which will essentially initiate the training process. Here, you need to enter all the parameters required for initiating the training process. You can also tune the hyperparameters of the model as per your needs. Once, all the information is entered, click on **Train Model** to train the model. Once, the training process is done, the model gets stored in the ModelArchitecture Collection.
 
