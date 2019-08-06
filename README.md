@@ -30,6 +30,7 @@ https://platform.clearblade.com/
 ```
 https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/
 ```
+3. Untick the two PNG files and click **Create**
 3. You can now access this system in the platform.
 
 ## Setup
