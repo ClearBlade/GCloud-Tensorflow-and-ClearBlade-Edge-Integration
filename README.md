@@ -85,20 +85,6 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/
 An Adapter is running on this edge which installs all the dependencies required for training the model.
 - Go to the portals and click on *TrainingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to train the model.
 - Once, the model is trained it is ready to be tested. 
-
-- Testing on the same machine:
-  - Stop the Training Edge : **CTRL-C**
-  - Create a new Directory and navigate to that Directory.
-  - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
-  An Adapter is running on this edge which installs all the dependencies required for testing the model. 
-  - Go to the portals and click on *TestingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to test the model.
-  
- - Testing on the different machine:
-   - Open a Terminal on your Machine.
-   - Create a new Directory and navigate to that Directory.
-   - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
-   An Adapter is running on this edge which installs all the dependencies required for testing the model. 
-   - Go to the portals and click on *TestingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to test the model.
   
 ## Usage
 
@@ -120,8 +106,21 @@ The ```Training of the model``` can be done by the following steps:
 
 The ```Testing of the model``` can be done by the following steps:
 
-- Open the TestingPortal from the Portals option in the ClearBlade Platform Tab
-- Click on **Get Features for Prediction** to get all the features that were used for the training process.
+- Testing on the same machine:
+  - Stop the Training Edge : **CTRL-C**
+  - Create a new Directory and navigate to that Directory.
+  - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
+  An Adapter is running on this edge which installs all the dependencies required for testing the model. 
+  - Go to the portals and click on *TestingPortal*.
+  
+- Testing on the different machine:
+  - Open a Terminal on your Machine.
+  - Create a new Directory and navigate to that Directory.
+  - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
+   An Adapter is running on this edge which installs all the dependencies required for testing the model. 
+  - Go to the portals and click on *TestingPortal*.
+
+- Once the portal is opened, click on **Get Features for Prediction** to get all the features that were used for the training process.
 - Enter all the data and press the **Predict** button to get the Predicted value.
 
 ### System Overview Diagram
