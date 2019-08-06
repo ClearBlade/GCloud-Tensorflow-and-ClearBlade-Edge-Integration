@@ -3,6 +3,7 @@
 ## Contents
 
 ### [Overview](#overview-1)
+### [System Installation](#system-1)
 ### [Setup](#setup-1)
 ### [Usage](#usage-1)
 ### [System Overview Diagram](#System-Overview-Diagram-1)
@@ -18,6 +19,12 @@ This package provides an overview of how Machine Learning can be integrated with
 This is an ipm package, which contains one or more reusable assets within the ipm Community. The 'package.json' in this repo is a ipm spec's package.json, [here](https://docs.clearblade.com/v/3/6-ipm/spec), which is a superset of npm's package.json spec, [here](https://docs.npmjs.com/files/package.json).
 
 [Browse ipm Packages](https://ipm.clearblade.com)
+
+## System Installation
+
+1. Go to 
+
+```https://platform.clearblade.com/```
 
 ## Setup
 
