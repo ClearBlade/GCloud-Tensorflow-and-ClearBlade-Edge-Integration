@@ -3,7 +3,7 @@
 ## Contents
 
 ### [Overview](#overview-1)
-### [System Installation](#system-1)
+### [System Installation](#system-installation)
 ### [Setup](#setup-1)
 ### [Usage](#usage-1)
 ### [System Overview Diagram](#System-Overview-Diagram-1)
@@ -22,9 +22,15 @@ This is an ipm package, which contains one or more reusable assets within the ip
 
 ## System Installation
 
-1. Go to 
-
-```https://platform.clearblade.com/```
+1. Open the ClearBlade Platform and enter your login credentials
+```
+https://platform.clearblade.com/
+```
+2. Click on **Add System** -> **Advanced** and copy the link of this repository in the box.
+```
+https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/
+```
+3. You can now access this system in the platform.
 
 ## Setup
 
