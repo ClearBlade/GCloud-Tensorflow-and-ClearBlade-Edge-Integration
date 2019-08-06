@@ -153,7 +153,9 @@ The ```Testing of the model``` can be done by the following steps:
 
 ```TrainingFiles```: A Collection which stores machine learning algorithm specific files
 
-```FeaturesDataset```: A Collection with the required features for Training
+```SensorData```: A Collection which can be used for Training the model
+
+```Features```: A Collection which has only useful features from the SensorData (You can create your own collection with different features by using the portals)
 
 ### Portals
 
