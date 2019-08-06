@@ -155,7 +155,7 @@ The ```Testing of the model``` can be done by the following steps:
 
 ```SensorData```: A Collection which can be used for Training the model
 
-```Features```: A Collection which has only useful features from the SensorData (You can create your own collection with different features by using the portals)
+```Features```: A Collection which has the useful features from the SensorData (You can create your own collection with different features by using the training portal)
 
 ### Portals
 
