@@ -28,7 +28,7 @@ https://platform.clearblade.com/
 ```
 2. Click on **Add System** -> **Advanced** and copy the link of this repository in the box.
 ```
-https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/
+https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 ```
 3. Untick the two PNG files and click **Create**
 3. You can now access this system in the platform.
