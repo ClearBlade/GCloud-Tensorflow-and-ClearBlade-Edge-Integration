@@ -1,9 +1,0 @@
-{
-    "id": "bbbc2520-2e9b-4658-81ee-2cff36f38d91",
-    "name": "archfilename",
-    "settings": {
-        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
-        "USE_PARSER": false
-    },
-    "type": "LOCAL_DATASOURCE_PLUGIN"
-}

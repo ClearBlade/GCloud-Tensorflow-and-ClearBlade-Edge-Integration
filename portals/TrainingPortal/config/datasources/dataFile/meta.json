@@ -1,9 +1,0 @@
-{
-    "id": "fdf043e6-0460-434e-998e-22cf44fa52a9",
-    "name": "dataFile",
-    "settings": {
-        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
-        "USE_PARSER": false
-    },
-    "type": "LOCAL_DATASOURCE_PLUGIN"
-}
