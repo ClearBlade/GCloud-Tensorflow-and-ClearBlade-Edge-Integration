@@ -83,6 +83,11 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 - Use these credentials to open the portals.
 - Navigate to Edges on ClearBlade Platform and Install the *TrainingEdge* : https://docs.clearblade.com/v/4/edge/tutorial/.
 An Adapter is running on this edge which installs all the dependencies required for training the model.
+- To check whether the adapter has been deployed successfully, open another terminal and run:
+```
+ps aux | grep runTraining.py
+```
+- If you see a running process, then the adapter has been deployed. If you dont see a running process, follow [these](https://docs.clearblade.com/v/4/deployment/tutorial/) steps to deploy the adapter.
 - Go to the portals and click on *TrainingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to train the model.
 - Once, the model is trained it is ready to be tested. 
   
@@ -121,6 +126,11 @@ The ```Testing of the model``` can be done by the following steps:
    An Adapter is running on this edge which installs all the dependencies required for testing the model. 
   - Go to the portals and click on *TestingPortal*.
 
+- To check whether the adapter has been deployed successfully, open another terminal and run:
+```
+ps aux | grep runpredict.py
+```
+- If you see a running process, then the adapter has been deployed. If you dont see a running process, follow [these](https://docs.clearblade.com/v/4/deployment/tutorial/) steps to deploy the adapter.
 - Once the portal is opened, click on **Get Features for Prediction** to get all the features that were used for the training process.
 - Enter all the data and press the **Predict** button to get the Predicted value.
 
