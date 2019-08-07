@@ -1,0 +1,14 @@
+{
+    "id": "a7b36782-e488-49eb-bc40-7f9931f1684a",
+    "name": "fetchTrainData",
+    "settings": {
+        "CALL_ON_LOAD": true,
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "SUPPRESS_DATASOURCE_ERRORS": false,
+        "USE_PARSER": false,
+        "code_name": "fetchTrainData",
+        "payload": "{}",
+        "refresh_interval": 0
+    },
+    "type": "CB_CODE_SERVICE"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "61ec4616-2a7a-4141-aa23-5ec535d36c9d",
+    "name": "CategoricalData",
+    "settings": {
+        "CALL_ON_LOAD": true,
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "SUPPRESS_DATASOURCE_ERRORS": false,
+        "USE_PARSER": false,
+        "collection_name": "CategoricalData",
+        "refresh_interval": 0
+    },
+    "type": "CB_COLLECTION"
+}

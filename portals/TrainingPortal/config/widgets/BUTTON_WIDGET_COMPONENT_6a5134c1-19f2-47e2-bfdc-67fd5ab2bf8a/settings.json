@@ -1,0 +1,20 @@
+{
+    "HAS_UNIQUE_STYLE": true,
+    "backgroundColor": "#9c9999",
+    "backgroundHoverColor": "#71ef9d",
+    "borderColor": "#cccccc",
+    "eventTarget": {
+        "dataType": "DYNAMIC_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "id": "1bbbca39-89e9-46dc-a264-9f6e1dca7ffc",
+        "outgoing_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/eventTarget/outgoing_parser/index.js"
+        }
+    },
+    "fontColor": "#ffffff",
+    "label": "Copy Feature Data"
+}

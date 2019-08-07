@@ -1,0 +1,12 @@
+{
+    "id": "9ade1e2d-06b2-42d3-8f04-c799cc330364",
+    "name": "sendresult",
+    "settings": {
+        "CALL_ON_LOAD": true,
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "SUPPRESS_DATASOURCE_ERRORS": false,
+        "TOPIC_NAME": "send/results",
+        "USE_PARSER": false
+    },
+    "type": "CB_MESSAGE_TOPIC"
+}

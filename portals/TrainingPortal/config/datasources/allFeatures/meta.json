@@ -1,0 +1,10 @@
+{
+    "id": "4bd3f2fd-adbf-41cd-9c13-d4c051d65895",
+    "name": "allFeatures",
+    "settings": {
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "USE_PARSER": false,
+        "defaultValue": "{\n    \"Features\" : []\n}"
+    },
+    "type": "LOCAL_DATASOURCE_PLUGIN"
+}

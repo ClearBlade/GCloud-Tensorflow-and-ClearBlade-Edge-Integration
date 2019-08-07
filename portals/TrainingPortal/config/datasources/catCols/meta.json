@@ -1,0 +1,10 @@
+{
+    "id": "7fc9b7c7-81e4-4836-bdbb-422bdcd3921e",
+    "name": "catCols",
+    "settings": {
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "USE_PARSER": false,
+        "defaultValue": "{\n    \"categorical\" : []\n}"
+    },
+    "type": "LOCAL_DATASOURCE_PLUGIN"
+}

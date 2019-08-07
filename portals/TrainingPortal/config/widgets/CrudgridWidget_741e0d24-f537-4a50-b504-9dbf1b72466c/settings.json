@@ -1,0 +1,224 @@
+{
+    "addItemParser": {
+        "dataType": "CALCULATED_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "id": "da9d8f24-dfda-4a45-8756-a22dbb52d07c",
+        "outgoing_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/addItemParser/outgoing_parser/index.js"
+        }
+    },
+    "allowAdd": false,
+    "allowDelete": true,
+    "allowExport": false,
+    "allowHighlight": false,
+    "allowImport": false,
+    "allowSearch": false,
+    "allowUpdate": false,
+    "deleteItemParser": {
+        "dataType": "DYNAMIC_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "id": "92b4f6ed-8f78-4b29-ba91-09e95be46f3e",
+        "outgoing_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/deleteItemParser/outgoing_parser/index.js"
+        }
+    },
+    "editCells": {
+        "DataType": {
+            "dataType": "string",
+            "display": true,
+            "inputType": "text",
+            "isReadOnly": false,
+            "key": "2fd4043f-1161-4a06-96e9-93993499c3ab",
+            "layout": {
+                "lg": {
+                    "h": 5,
+                    "i": "DataType",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 6
+                },
+                "md": {
+                    "h": 5,
+                    "i": "DataType",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 6
+                },
+                "sm": {
+                    "h": 5,
+                    "i": "DataType",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 6
+                },
+                "xl": {
+                    "h": 5,
+                    "i": "DataType",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 6
+                },
+                "xs": {
+                    "h": 5,
+                    "i": "DataType",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 6
+                },
+                "xxs": {
+                    "h": 5,
+                    "i": "DataType",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 6
+                }
+            },
+            "modalPreviewAtLength": 50,
+            "modalPreviewForJSON": true,
+            "name": "DataType",
+            "orderIdx": 2
+        },
+        "Features": {
+            "dataType": "string",
+            "display": true,
+            "inputType": "HTML_STRING",
+            "key": "ead34eb0-f916-40e0-bfb9-0fcf7d30700f",
+            "layout": {
+                "lg": {
+                    "h": 5,
+                    "i": "Features",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 3
+                },
+                "md": {
+                    "h": 5,
+                    "i": "Features",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 3
+                },
+                "sm": {
+                    "h": 5,
+                    "i": "Features",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 3
+                },
+                "xl": {
+                    "h": 5,
+                    "i": "Features",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 3
+                },
+                "xs": {
+                    "h": 5,
+                    "i": "Features",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 3
+                },
+                "xxs": {
+                    "h": 5,
+                    "i": "Features",
+                    "minH": 3,
+                    "w": 36,
+                    "x": 0,
+                    "y": 3
+                }
+            },
+            "name": "Features",
+            "orderIdx": 1
+        }
+    },
+    "enableSorting": false,
+    "evenStripeColor": "#ffffff",
+    "exportDataParser": {
+        "dataType": "CALCULATED_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE"
+        ],
+        "id": "da9d8f24-dfda-4a45-8756-a22dbb52d07c",
+        "outgoing_parser": {
+            "isDebugOn": false,
+            "value": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.widget;\n}"
+        },
+        "value": "./parsers/exportDataParser/outgoing_parser/index.js"
+    },
+    "fetchGridData": {
+        "dataType": "CALCULATED_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "id": "da9d8f24-dfda-4a45-8756-a22dbb52d07c",
+        "outgoing_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/fetchGridData/outgoing_parser/index.js"
+        }
+    },
+    "gridData": {
+        "dataType": "DYNAMIC_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "id": "da9d8f24-dfda-4a45-8756-a22dbb52d07c",
+        "incoming_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/gridData/incoming_parser/index.js"
+        }
+    },
+    "hidePaginationWhenNotNeeded": true,
+    "highlightColor": "#007bff",
+    "highlightItemParser": {
+        "dataType": "CALCULATED_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "id": "da9d8f24-dfda-4a45-8756-a22dbb52d07c",
+        "outgoing_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/highlightItemParser/outgoing_parser/index.js"
+        }
+    },
+    "highlightTextColor": "#fff",
+    "oddStripeColor": "#f5f5f5",
+    "pageSize": 50,
+    "searchPlaceholderText": "search",
+    "showSearchBar": false,
+    "textColor": "#000000",
+    "updateItemParser": {
+        "dataType": "CALCULATED_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "id": "da9d8f24-dfda-4a45-8756-a22dbb52d07c",
+        "outgoing_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/updateItemParser/outgoing_parser/index.js"
+        }
+    }
+}

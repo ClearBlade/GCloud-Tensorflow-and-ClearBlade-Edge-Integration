@@ -1,0 +1,152 @@
+{
+    "items": [
+        {
+            "dtypes": "string",
+            "features": "body_style",
+            "item_id": "112d5ffb-a233-4064-969c-6e7abdd55503"
+        },
+        {
+            "dtypes": "float",
+            "features": "compression_ratio",
+            "item_id": "141d1c2a-e898-411d-8b35-a78a58b8691e"
+        },
+        {
+            "dtypes": "string",
+            "features": "bore",
+            "item_id": "18ef9fb3-b486-4e2d-8710-2b2ee57b6b84"
+        },
+        {
+            "dtypes": "string",
+            "features": "peak_rpm",
+            "item_id": "2bc4f93c-adc0-4ba6-bfbd-3c7760bc2682"
+        },
+        {
+            "dtypes": "float",
+            "features": "wheel_base",
+            "item_id": "40346b55-9e39-4576-a5f7-32e65867d3fc"
+        },
+        {
+            "dtypes": "string",
+            "features": "make",
+            "item_id": "40acaaa0-e463-42b5-81df-051564c45e27"
+        },
+        {
+            "dtypes": "string",
+            "features": "normalized_losses",
+            "item_id": "6206180c-2ed7-4f90-9b38-0d42e2f31798"
+        },
+        {
+            "dtypes": "float",
+            "features": "engine_size",
+            "item_id": "72388723-6f21-4191-98be-4f3fba382d02"
+        },
+        {
+            "dtypes": "string",
+            "features": "stroke",
+            "item_id": "72e8af79-be15-49f3-b1c8-c5696dfce530"
+        },
+        {
+            "dtypes": "float",
+            "features": "symboling",
+            "item_id": "8007d037-41b3-453c-8f89-e51874a8d982"
+        },
+        {
+            "dtypes": "float",
+            "features": "city_mpg",
+            "item_id": "8c9f5c0e-0c28-48c0-9a67-270ecb959592"
+        },
+        {
+            "dtypes": "string",
+            "features": "engine_location",
+            "item_id": "90c85f96-4c4d-48d8-bc56-b8b1bc5ec82d"
+        },
+        {
+            "dtypes": "string",
+            "features": "num_of_cylinders",
+            "item_id": "99f71a9c-cda8-4169-9cdd-2bf5b361a3cd"
+        },
+        {
+            "dtypes": "float",
+            "features": "height",
+            "item_id": "9b8f08c0-3e0a-4ba3-8e13-fcb2bebf25bd"
+        },
+        {
+            "dtypes": "string",
+            "features": "aspiration",
+            "item_id": "a048ab04-2bea-48cf-89d4-813e5f296871"
+        },
+        {
+            "dtypes": "float",
+            "features": "length",
+            "item_id": "aa7c7af7-cff8-4b68-8271-1ff0342e2744"
+        },
+        {
+            "dtypes": "string",
+            "features": "engine_type",
+            "item_id": "ae4ed7a9-a151-4e77-8384-1866ec60a0ae"
+        },
+        {
+            "dtypes": "float",
+            "features": "curb_weight",
+            "item_id": "c06c5973-5e2b-4f78-bce4-743c2a1a1626"
+        },
+        {
+            "dtypes": "string",
+            "features": "fuel_type",
+            "item_id": "d6003158-e1a6-46f9-8255-8ae902842691"
+        },
+        {
+            "dtypes": "string",
+            "features": "num_of_doors",
+            "item_id": "d85e230d-335f-45dd-b096-50d728259a50"
+        },
+        {
+            "dtypes": "string",
+            "features": "drive_wheels",
+            "item_id": "e51f389f-d3ff-4344-ade9-c17914934283"
+        },
+        {
+            "dtypes": "float",
+            "features": "width",
+            "item_id": "e8870ffd-0b10-4d8c-810e-2901df317e9b"
+        },
+        {
+            "dtypes": "string",
+            "features": "horsepower",
+            "item_id": "ea95a650-1708-4f9e-bbd9-67efb3f2bea2"
+        },
+        {
+            "dtypes": "string",
+            "features": "price",
+            "item_id": "f1d5d19f-857d-44c2-8c2e-d74e483b01b2"
+        },
+        {
+            "dtypes": "float",
+            "features": "highway_mpg",
+            "item_id": "fce82b40-dedd-4f6a-9618-db6fe0388d0a"
+        },
+        {
+            "dtypes": "string",
+            "features": "fuel_system",
+            "item_id": "fd45e0ab-efdf-4379-b9a5-32cf574553f2"
+        }
+    ],
+    "name": "AllFeatures",
+    "schema": [
+        {
+            "ColumnName": "item_id",
+            "ColumnType": "uuid",
+            "PK": true
+        },
+        {
+            "ColumnName": "features",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "dtypes",
+            "ColumnType": "string",
+            "PK": false
+        }
+    ]
+}
