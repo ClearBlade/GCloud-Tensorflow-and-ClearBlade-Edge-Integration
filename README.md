@@ -88,9 +88,9 @@ An Adapter is running on this edge which installs all the dependencies required 
   
 ## Usage
 
-Machine Learning models essentially work in two phases - ```Training Phase and Testing Phase```. The model needs to be Trained before it can be tested. 
+Machine Learning models essentially work in two phases - ```Training Phase and Testing Phase```. The model needs to be Trained before it can be tested.
 
-(Open the ModelArchitecture Collection to check whether it is empty or not. If the collection is not empty, then a model has already been trained and stored in the collection. You can directly skip to the testing phase to test the model. Otherwise, follow the training steps)
+(Open the ModelArchitecture Collection to check whether it is empty or not. If the collection is not empty, then a model has already been trained and stored in the collection. You can directly skip to the testing phase to test the model. Otherwise, follow the training steps.)
 
 The ```Training of the model``` can be done by the following steps:
 
@@ -100,7 +100,7 @@ The ```Training of the model``` can be done by the following steps:
 - Select the features, provide a unique *Feature Name* and click on **Create Feature Collection** to create a new collection with only those features which you have selected. 
 - Go to the collections on the platform and give the newly generated collection permissions. Go back to the portal and click on **Copy Feature Data** to copy the data and then click **NEXT** to continue.
 - The next tab is the **Clean Data** Tab which helps you to remove any empty rows from the data by clicking on **Delete Empty Rows** and handle categorical Data by clicking on **View Categorical Data**. Once cleaning of data is done, click **NEXT** to proceed.
-- This tab is the **Train Model** which will essentially initiate the training process. Here, you need to enter all the parameters required for initiating the training process. You can also tune the hyperparameters of the model as per your needs. Once, all the information is entered, click on **Train Model** to train the model. 
+- This tab is the **Train Model** which will essentially initiate the training process. Here, you need to enter all the parameters required for initiating the training process. You can also tune the hyperparameters of the model as per your needs. Once, all the information is entered, click on **Train Model** to train the model. (A Neural Network Model has already been designed and stored in the **TrainingFiles** Collection. However, you can design your own model and upload your algorithm files through the portals.)
 - Your model will start to train and you can monitor the logs on: https://console.cloud.google.com/mlengine/jobs?project=<*PROJECT_NAME*>
 - Once, the training process is done, the model gets stored in the ModelArchitecture Collection.
 
