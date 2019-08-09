@@ -100,7 +100,8 @@ Machine Learning models essentially work in two phases - ```Training Phase and T
 The ```Training of the model``` can be done by the following steps:
 
 - Open the TrainingPortal from the Portals 
-- Click on **View Training Dataset** Tab to select the collection for training the model and then click **NEXT**.
+- Go to Datasources on the side editor and search for **systemCredentials**. Click on the datasource and enter you *System Key*, *System Secret* and *System Name* in the JSON tab and hit **Save**.
+- Click on **View Training Dataset** Tab on the main window to select the collection for training the model and then click **NEXT**.
 - The next tab is the **Feature Selection** Tab which helps you to select the meaningful features that you want for training the model. 
 - Select the features, provide a unique *Feature Name* and click on **Create Feature Collection** to create a new collection with only those features which you have selected. 
 - Go to the collections on the platform and give the newly generated collection permissions. Go back to the portal and click on **Copy Feature Data** to copy the data and then click **NEXT** to continue.
