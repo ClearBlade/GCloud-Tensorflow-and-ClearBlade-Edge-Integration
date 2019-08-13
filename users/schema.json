@@ -1,9 +1,0 @@
-{
-    "columns": [
-        {
-            "ColumnName": "user_id",
-            "ColumnType": "string",
-            "PK": true
-        }
-    ]
-}

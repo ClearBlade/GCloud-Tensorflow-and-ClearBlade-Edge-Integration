@@ -1,9 +1,0 @@
-{
-    "id": "01ed1b53-ccf1-43af-b0d7-25cd3b8672e5",
-    "name": "trainfilename",
-    "settings": {
-        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
-        "USE_PARSER": false
-    },
-    "type": "LOCAL_DATASOURCE_PLUGIN"
-}
