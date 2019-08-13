@@ -1,0 +1,14 @@
+{
+    "HAS_UNIQUE_STYLE": true,
+    "fontColor": "#000000",
+    "fontFamily": "Times New Roman",
+    "fontSize": 30,
+    "textContent": {
+        "dataType": "DYNAMIC_DATA_TYPE",
+        "id": "367f8fbd-29b1-4c20-b006-ecbddeb511b3",
+        "incoming_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/textContent/incoming_parser/index.js"
+        }
+    }
+}

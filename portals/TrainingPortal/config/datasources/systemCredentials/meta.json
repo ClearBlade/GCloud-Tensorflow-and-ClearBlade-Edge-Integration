@@ -1,0 +1,10 @@
+{
+    "id": "f2a0b316-88f3-4cb7-b8df-b27c83d866c3",
+    "name": "systemCredentials",
+    "settings": {
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "USE_PARSER": false,
+        "defaultValue": "{\n  \"systemKey\": \"a6c2e6d10bc2f183fca3c7d3d0fe01\",\n  \"systemSecret\": \"A6C2E6D10BCADB819FABF8FCD94E\",\n  \"systemName\": \"DataPreprocessing\"\n}"
+    },
+    "type": "LOCAL_DATASOURCE_PLUGIN"
+}

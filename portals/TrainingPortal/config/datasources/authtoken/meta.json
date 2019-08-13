@@ -1,0 +1,9 @@
+{
+    "id": "7ed140b5-9667-41a9-a705-80e4de650d46",
+    "name": "authtoken",
+    "settings": {
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "USE_PARSER": false
+    },
+    "type": "LOCAL_DATASOURCE_PLUGIN"
+}

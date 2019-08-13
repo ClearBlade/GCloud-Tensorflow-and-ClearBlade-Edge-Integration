@@ -1,0 +1,13 @@
+{
+    "id": "392d3c31-6a1a-4651-8706-75559392ab7b",
+    "name": "GetFields",
+    "settings": {
+        "CALL_ON_LOAD": true,
+        "DATASOURCE_PARSER": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.data\n}",
+        "SUPPRESS_DATASOURCE_ERRORS": false,
+        "USE_PARSER": false,
+        "collection_name": "AllFeatures",
+        "refresh_interval": 0
+    },
+    "type": "CB_COLLECTION"
+}

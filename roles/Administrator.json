@@ -1,0 +1,198 @@
+{
+    "Description": "Default role that is applied to a user who has rights to everything",
+    "Name": "Administrator",
+    "Permissions": {
+        "AllCollections": {
+            "Level": 11
+        },
+        "AllServices": {
+            "Level": 0
+        },
+        "CodeServices": [
+            {
+                "Level": 1,
+                "Name": "clearMissingData"
+            },
+            {
+                "Level": 1,
+                "Name": "convertIntToFloat"
+            },
+            {
+                "Level": 1,
+                "Name": "createCollection"
+            },
+            {
+                "Level": 1,
+                "Name": "example"
+            },
+            {
+                "Level": 1,
+                "Name": "featureScaling"
+            },
+            {
+                "Level": 1,
+                "Name": "fetchFeatures"
+            },
+            {
+                "Level": 1,
+                "Name": "fetchTestData"
+            },
+            {
+                "Level": 1,
+                "Name": "fetchTrainData"
+            },
+            {
+                "Level": 1,
+                "Name": "getCategoricalColumns"
+            },
+            {
+                "Level": 1,
+                "Name": "numberOfNulls"
+            },
+            {
+                "Level": 1,
+                "Name": "oneHotEncoding"
+            },
+            {
+                "Level": 1,
+                "Name": "selectFeatures"
+            },
+            {
+                "Level": 1,
+                "Name": "splitData"
+            }
+        ],
+        "Collections": [
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "AllFeatures"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "Bosch299AIFeaturesData"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "Bosch299SensorData"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "CategoricalData"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "FeaturesDataset"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "MainCollection"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "ModelArchitecture"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "SampleCollection"
+            },
+            {
+                "Columns": [],
+                "Items": [],
+                "Level": 15,
+                "Name": "TrainingFiles"
+            }
+        ],
+        "Deployments": {
+            "Level": 15
+        },
+        "DevicesList": {
+            "Level": 0
+        },
+        "EdgesList": {
+            "Level": 15
+        },
+        "MsgHistory": {
+            "Level": 9
+        },
+        "Portals": [
+            {
+                "Level": 5,
+                "Name": "NewPredictionModel"
+            },
+            {
+                "Level": 5,
+                "Name": "PricePrediction"
+            },
+            {
+                "Level": 5,
+                "Name": "TestingPortal"
+            },
+            {
+                "Level": 5,
+                "Name": "TrainingPortal"
+            },
+            {
+                "Level": 5,
+                "Name": "predictionModel"
+            }
+        ],
+        "Push": {
+            "Level": 0
+        },
+        "Roles": {
+            "Level": 0
+        },
+        "ServiceCaches": [],
+        "Timers": {
+            "Level": 0
+        },
+        "Topics": [
+            {
+                "Level": 3,
+                "Name": "config"
+            },
+            {
+                "Level": 3,
+                "Name": "predict/results"
+            },
+            {
+                "Level": 3,
+                "Name": "send/predict"
+            },
+            {
+                "Level": 3,
+                "Name": "exit"
+            },
+            {
+                "Level": 3,
+                "Name": "predict"
+            },
+            {
+                "Level": 3,
+                "Name": "send"
+            }
+        ],
+        "Triggers": {
+            "Level": 0
+        },
+        "UsersList": {
+            "Level": 0
+        }
+    }
+}
