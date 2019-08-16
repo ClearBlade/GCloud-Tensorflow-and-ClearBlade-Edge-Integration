@@ -176,7 +176,7 @@ ps aux | grep runpredict.py
 - Select useful Features from the Training Dataset
 - Clean Data by removing empty rows
 - Handle incorrect Categorical Data
-- Converte Categorical Data to Numeric Data 
+- Convert Categorical Data to Numeric Data 
 - Provide Training Hyperparameters 
 
 ```TestingPortal```: This portal essentially allows the user to:
