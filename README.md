@@ -126,7 +126,7 @@ Machine Learning models essentially work in two phases - ```Training Phase and T
 - Testing on the different machine:
   - Open a Terminal on your Machine.
   - Create a new Directory and navigate to that Directory.
-  - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
+  - Navigate to Edges on the Platform and [Install](https://docs.clearblade.com/v/4/edge/tutorial/#install-and-start) *MLEdge* 
    An Adapter is running on this edge which installs all the dependencies required for testing the model. 
   - Go to the portals and click on *TestingPortal*.
 
