@@ -39,14 +39,12 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
   ```
   curl https://sdk.cloud.google.com | bash
   ```
-  - Initialize the SDK : 
+- Initialize the SDK : 
   ```
   gcloud init
   ```
-- Initializing the SDK will prompt you to authorize your account and to select a project or create a new project. (Creation of project can be through Google Console as well. However you have to execute ```gcloud init``` to select the working project.)
-  ```
-  https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.18563004.-485953982.1561568575
-  ```
+- Initializing the SDK will prompt you to authorize your account and to select a project or create a new project. (Creation of project can be through [Google Console]( https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.18563004.-485953982.1561568575) as well. However you have to execute ```gcloud init``` to select the working project.)
+
 - If you have created a project, ensure that billing is enabled for your project. More information on:
   ```
   https://cloud.google.com/billing/docs/how-to/modify-project
