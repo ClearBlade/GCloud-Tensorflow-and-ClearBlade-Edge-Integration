@@ -8,6 +8,7 @@
 ### [Setup](#setup-1)
 - #### [Setup on Google Cloud Platform](#setup-on-google-cloud-platform-1)
 - #### [Setup on ClearBlade](#setup-on-clearblade-1)
+### [Adapter Details](#adapter-details-1)
 ### [Usage](#usage-1)
 ### [System Overview Diagram](#System-Overview-Diagram-1)
 ### [Assets](#assets-1)
@@ -87,6 +88,8 @@ ps aux | grep runTraining.py
 - If you see a running process, then the adapter has been deployed. If you dont see a running process, follow [these](https://docs.clearblade.com/v/4/deployment/tutorial/) steps to deploy the adapter.
 - Go to the portals and click on *TrainingPortal* and follow the steps mentioned in the [**Usage**](#usage-1) to train the model.
 - Once, the model is trained it is ready to be tested. 
+
+## Adapter Details
   
 ## Usage
 
