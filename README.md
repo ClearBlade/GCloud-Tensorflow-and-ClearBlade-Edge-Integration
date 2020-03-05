@@ -101,7 +101,6 @@ Machine Learning models essentially work in two phases - ```Training Phase and T
 
 ### Training Process
 - Open the TrainingPortal from the Portals 
-- Go to Datasources on the side editor and search for **systemCredentials**. Click on the datasource and enter you *System Key*, *System Secret* and *System Name* in the JSON tab and hit **Save**.
 - Click on **View Training Dataset** Tab on the main window to select the collection for training the model and then click **NEXT**.
 - The next tab is the **Feature Selection** Tab which helps you to select the meaningful features that you want for training the model. 
 - Select the features, provide a unique *Feature Name* and click on **Create Feature Collection** to create a new collection with only those features which you have selected. 
@@ -116,7 +115,7 @@ Machine Learning models essentially work in two phases - ```Training Phase and T
 - Testing on the same machine:
   - Stop the Training Edge : **CTRL-C**
   - Create a new Directory and navigate to that Directory.
-  - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
+  - Navigate to Edges on the Platform and [Install](https://docs.clearblade.com/v/4/edge/tutorial/#install-and-start) *MLEdge* 
   An Adapter is running on this edge which installs all the dependencies required for testing the model. 
   - Go to the portals and click on *TestingPortal*.
   
