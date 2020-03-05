@@ -23,7 +23,7 @@
 
 Google's Tensorflow Library has been widely used for designing different machine learning algorithms and solving classification and regression problems. Training of the machine learning model requires a great deal of computational power and hence integration of machine learning with IoT is a challenging task. 
 
-This package provides an overview of how Machine Learning can be integrated with ClearBlade Platform to make useful decisions and analysis on the edges. Users can provide a training dataset from the ClearBlade Collections, perform some preprocessing techniques on the data, extract meaningful features and then train the model on Google AI Platform with the help of Portals. The trained model is stored in the collection and can be accessed by any edge to make predictions.  
+This package provides an overview of how Machine Learning can be integrated with ClearBlade Platform to make useful decisions and analysis on the edges. Users can provide a training dataset from the ClearBlade Collections, perform some preprocessing techniques on the data, extract meaningful features with the help of Portals and then train the model on Google AI Platform. The trained model is stored in the collection and can be accessed by any edge to make predictions.  
 
 This is an ipm package, which contains one or more reusable assets within the ipm Community. The 'package.json' in this repo is a ipm spec's package.json, [here](https://docs.clearblade.com/v/3/6-ipm/spec), which is a superset of npm's package.json spec, [here](https://docs.npmjs.com/files/package.json).
 
