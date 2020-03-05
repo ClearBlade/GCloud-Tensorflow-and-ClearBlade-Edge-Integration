@@ -11,7 +11,7 @@
 ### [Adapter Details](#adapter-details-1)
 ### [Usage](#usage-1)
 - #### [Training Process](#training-process-1)
-- #### [Testing](#testing-process-1)
+- #### [Testing Process](#testing-process-1)
 ### [System Overview Diagram](#System-Overview-Diagram-1)
 ### [Assets](#assets-1)
 
