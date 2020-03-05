@@ -1,9 +1,10 @@
+
 # GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 
 ## Contents
 
 ### [Overview](#overview-1)
-### [System Installation](#system-installation)
+### [System Installation](#system-installation-1)
 ### [Setup](#setup-1)
 ### [Usage](#usage-1)
 ### [System Overview Diagram](#System-Overview-Diagram-1)
@@ -75,17 +76,16 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 - Before setting up the ClearBlade service, please ensure that you have successfully completed the Google Cloud Platform setup.
 - Open a Terminal on your Machine.
 - Create a new Directory and navigate to that Directory.
-- Go to the Platform and Open this System. 
+- Go to the Platform and [Open this System](#system-installation-1). 
 - Create a new user with **username=*test@email.com*** and **password=*password*** (A user with same credentials might already be present in the system.)
 - Use these credentials to open the portals.
-- Navigate to Edges on ClearBlade Platform and Install the *TrainingEdge* : https://docs.clearblade.com/v/4/edge/tutorial/.
-An Adapter is running on this edge which installs all the dependencies required for training the model.
-- To check whether the adapter has been deployed successfully, open another terminal and run:
+- Navigate to Edges on the ClearBlade Platform and [Install](https://docs.clearblade.com/v/4/edge/tutorial/#install-and-start) the *TrainingEdge*. An Adapter is running on this edge which installs all the dependencies required for training the model.
+- To check whether the adapter has been deployed successfully, open an another terminal session and execute the following command:
 ```
 ps aux | grep runTraining.py
 ```
 - If you see a running process, then the adapter has been deployed. If you dont see a running process, follow [these](https://docs.clearblade.com/v/4/deployment/tutorial/) steps to deploy the adapter.
-- Go to the portals and click on *TrainingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to train the model.
+- Go to the portals and click on *TrainingPortal* and follow the steps mentioned in the [**Usage**](#usage-1) to train the model.
 - Once, the model is trained it is ready to be tested. 
   
 ## Usage
