@@ -136,7 +136,7 @@ ps aux | grep runpredict.py
 
 ### System Overview Diagram
 
-![alt text](https://github.com/rajasd27/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/blob/master/Architecture%20Diagram.png)
+![alt text](https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/blob/master/Architecture%20Diagram.png)
 
 ### Sequential Diagram
 
