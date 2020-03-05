@@ -148,6 +148,12 @@ ps aux | grep runpredict.py
 
 ## Assets
 
+### Adapters
+
+``` TrainingAdapter ```: 
+
+``` MLAdapter ```: 
+
 ### Code Services
 
 ```clearMissingData```: A service which cleans the data by removing empty rows
