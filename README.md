@@ -56,11 +56,11 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
   ```
   https://cloud.google.com/billing/docs/how-to/modify-project
   ```
-- Enable the AI Platform ("Cloud Machine Learning Engine") and Compute Engine APIs:
+- Enable the AI Platform ("Cloud Machine Learning Engine") and Compute Engine APIs. This ensures that your project is authorized to access the AI Platform APIs for training and testing machine learning models. To enable the APIs, go to:
   ```
   https://console.cloud.google.com/flows/enableapi?apiid=ml.googleapis.com,compute_component&_ga=2.15003827.-485953982.1561568575
   ```
-- Create a New Service : 
+- Create a New Service. A [service account](https://cloud.google.com/iam/docs/service-accounts?_ga=2.170145449.-827903836.1583451287) is basically a special kind of account used by an application or a virtual machine (VM) instance, not a person. Applications use service accounts to make authorized API calls. To create a new service, execute the following command: 
   ```
   gcloud beta iam service-accounts create <SERVICE_NAME>
   ```
@@ -68,13 +68,13 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
   ```
   gcloud projects add-iam-policy-binding <PROJECT_NAME> --member serviceAccount:<SERVICE_NAME>@<PROJECT_NAME>.iam.gserviceaccount.com --role roles/cloudbuild.builds.builder
   ```
-- In some cases, this command fails to execute if the user doesn't have permissions to provide access rights to the project. In this case, once a service account is created, go to https://console.cloud.google.com/storage/browser and manually create a new bucket.
+- In some cases, this command fails to execute if the user doesn't have permissions to provide access rights to the project. In this case, once a service account is created, go to https://console.cloud.google.com/storage/browser and manually create a new bucket. A bucket a required because the Google AI platform interacts with the bucket for fetching the data required for training and then storing the trained models into the bucket.
 
-- Once this bucket is created, execute the following command: 
+- Once this bucket is created, execute the following command to grant storage admin permissions to the service. This ensures that the adapter communicates with the bucket to store the training data in the bucket.
   ```
   gsutil iam ch serviceAccount:<SERVICE_NAME>@<PROJECT_NAME>.iam.gserviceaccount.com:roles/storage.admin gs://<BUCKET_NAME>
   ```
-  This will grant storage admin permissions to the service.
+  
 - Once all the steps are done, follow the Setup Steps for starting ClearBlade adapter services.
 
 
@@ -151,11 +151,11 @@ The following adapters are designed to work on the **Darwin (OS X) x86-64** arch
 ``` TrainingAdapter ```: This adapter is started when the *TrainingEdge* is running. It consists of a deploy script, a start script and a bunch of python scripts. The deploy script is responsible for installing all the dependencies required for training a model. The start script is responsible for executing all the python scripts provided in this adapter. These python scripts are essentially designed to integrate the ClearBlade platform with the Google Cloud AI Platform and to carry out various tasks which are required for training the model on the Google Cloud Platform. The following tasks are performed by this adapter:
 - Fetch the model and the training parameters from the portals using MQTT communication
 - Fetch the training data from the ClearBlade Collections
-- Generalize the datatypes and handle categorical data
+- Carry out data preprocessing tasks and handle categorical data
 - Send the model and the data to the Google Cloud AI Platform for training
 - Fetch the trained model from Google Cloud AI Platform and store it in a ClearBlade Collection
 
-``` MLAdapter ```: 
+``` MLAdapter ```: This adapter is started when the *MLEdge* is running. It consists of a deploy script and a python prediction start script. The deploy script is responsible for installing all the dependencies required for training a model. The prediction script is responsible for fetching the trained model from the collections and then carry out predictions for the required test data.
 
 ### Code Services
 
