@@ -6,6 +6,7 @@
 ### [Overview](#overview-1)
 ### [System Installation](#system-installation-1)
 ### [Setup](#setup-1)
+- #### [Setup on Google Cloud Platform](#setup-on-google-cloud-platform)
 ### [Usage](#usage-1)
 ### [System Overview Diagram](#System-Overview-Diagram-1)
 ### [Assets](#assets-1)
@@ -33,7 +34,7 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 
 ## Setup
 
-### Setup on Google Cloud Platform: 
+### Setup on Google Cloud Platform
 - Download and Install Google SDK : 
   ```
   curl https://sdk.cloud.google.com | bash
