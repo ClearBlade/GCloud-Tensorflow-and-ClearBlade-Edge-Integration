@@ -30,12 +30,11 @@ https://platform.clearblade.com/
 ```
 https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 ```
-3. Untick the two PNG files and click **Create**
-3. You can now access this system in the platform.
+3. Click **Create** and you can now access this system in the platform.
 
 ## Setup
 
-1. Setup on Google Cloud Platform: 
+### Setup on Google Cloud Platform: 
 - Execute the following commands to setup Google Cloud CLI (Can be done by using Google Cloud Console)
   - Download and Install Google SDK : 
   ```
@@ -74,7 +73,7 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 - Once all the steps are done, follow the Setup Steps for starting ClearBlade adapter services.
 
 
-2. Setup on ClearBlade:
+### Setup on ClearBlade:
 - Before setting up the ClearBlade service, please ensure that you have successfully completed the Google Cloud Platform setup.
 - Open a Terminal on your Machine.
 - Create a new Directory and navigate to that Directory.
