@@ -8,7 +8,6 @@
 ### [Setup](#setup-1)
 - #### [Setup on Google Cloud Platform](#setup-on-google-cloud-platform-1)
 - #### [Setup on ClearBlade](#setup-on-clearblade-1)
-### [Adapter Details](#adapter-details-1)
 ### [Usage](#usage-1)
 - #### [Training Process](#training-process-1)
 - #### [Testing Process](#testing-process-1)
@@ -95,13 +94,11 @@ ps aux | grep runTraining.py
 - Go to the portals and click on *TrainingPortal* and follow the steps mentioned in the [**Usage**](#usage-1) to train the model.
 - Once, the model is trained it is ready to be tested. 
 
-## Adapter Details
-  
 ## Usage
 
 Machine Learning models essentially work in two phases - ```Training Phase and Testing Phase```. The model needs to be Trained before it can be tested.
 
-(Open the ModelArchitecture Collection to check whether it is empty or not. If the collection is not empty, then a model has already been trained and stored in the collection. You can directly skip to the testing phase to test the model. Otherwise, follow the training steps.)
+(Open the ModelArchitecture Collection to check whether it is empty or not. If the collection is not empty, then a model has already been trained and stored in the collection. You can directly skip to the (testing phase)[(#testing-process-1)] to test the model. Otherwise, follow the training steps.)
 
 ### Training Process
 - Open the TrainingPortal from the Portals 
@@ -149,8 +146,14 @@ ps aux | grep runpredict.py
 ## Assets
 
 ### Adapters
+The following adapters are designed to work on the **Darwin (OS X) x86-64** architecture. These adapters are deployed when the corresponding edges are running.
 
-``` TrainingAdapter ```: 
+``` TrainingAdapter ```: This adapter is started when the *TrainingEdge* is running. It consists of a deploy script, a start script and a bunch of python scripts. The deploy script is responsible for installing all the dependencies required for training a model. The start script is responsible for executing all the python scripts provided in this adapter. These python scripts are essentially designed to integrate the ClearBlade platform with the Google Cloud AI Platform and to carry out various tasks which are required for training the model on the Google Cloud Platform. The following tasks are performed by this adapter:
+- Fetch the model and the training parameters from the portals using MQTT communication
+- Fetch the training data from the ClearBlade Collections
+- Generalize the datatypes and handle categorical data
+- Send the model and the data to the Google Cloud AI Platform for training
+- Fetch the trained model from Google Cloud AI Platform and store it in a ClearBlade Collection
 
 ``` MLAdapter ```: 
 
