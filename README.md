@@ -140,7 +140,7 @@ ps aux | grep runpredict.py
 
 ### Sequential Diagram
 
-![alt text](https://github.com/rajasd27/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/blob/master/Sequential%20Diagram.png)
+![alt text](https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/blob/master/Sequential%20Diagram.png)
 
 ## Assets
 
