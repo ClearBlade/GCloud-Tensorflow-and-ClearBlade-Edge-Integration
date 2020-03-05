@@ -10,6 +10,8 @@
 - #### [Setup on ClearBlade](#setup-on-clearblade-1)
 ### [Adapter Details](#adapter-details-1)
 ### [Usage](#usage-1)
+- #### [Training Process](#training-process-1)
+- #### [Testing](#testing-process-1)
 ### [System Overview Diagram](#System-Overview-Diagram-1)
 ### [Assets](#assets-1)
 
@@ -97,8 +99,7 @@ Machine Learning models essentially work in two phases - ```Training Phase and T
 
 (Open the ModelArchitecture Collection to check whether it is empty or not. If the collection is not empty, then a model has already been trained and stored in the collection. You can directly skip to the testing phase to test the model. Otherwise, follow the training steps.)
 
-The ```Training of the model``` can be done by the following steps:
-
+### Training Process
 - Open the TrainingPortal from the Portals 
 - Go to Datasources on the side editor and search for **systemCredentials**. Click on the datasource and enter you *System Key*, *System Secret* and *System Name* in the JSON tab and hit **Save**.
 - Click on **View Training Dataset** Tab on the main window to select the collection for training the model and then click **NEXT**.
@@ -111,8 +112,7 @@ The ```Training of the model``` can be done by the following steps:
 - Your model will start to train and you can monitor the logs on: https://console.cloud.google.com/mlengine/jobs?project=<*PROJECT_NAME*>
 - Once, the training process is done, the model gets stored in the ModelArchitecture Collection.
 
-The ```Testing of the model``` can be done by the following steps:
-
+### Testing Process
 - Testing on the same machine:
   - Stop the Training Edge : **CTRL-C**
   - Create a new Directory and navigate to that Directory.
