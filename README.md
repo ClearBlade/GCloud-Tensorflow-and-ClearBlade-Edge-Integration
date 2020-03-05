@@ -35,8 +35,7 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 ## Setup
 
 ### Setup on Google Cloud Platform: 
-- Execute the following commands to setup Google Cloud CLI (Can be done by using Google Cloud Console)
-  - Download and Install Google SDK : 
+- Download and Install Google SDK : 
   ```
   curl https://sdk.cloud.google.com | bash
   ```
@@ -44,28 +43,29 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
   ```
   gcloud init
   ```
-  - Initializing the SDK will prompt you to authorize your account and to select a project or create a new project. (Creation of project can be through Google Console as well. However you have to execute ```gcloud init``` to select the working project.)
+- Initializing the SDK will prompt you to authorize your account and to select a project or create a new project. (Creation of project can be through Google Console as well. However you have to execute ```gcloud init``` to select the working project.)
   ```
   https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.18563004.-485953982.1561568575
   ```
-  - If you have created a project, ensure that billing is enabled for your project. More information on:
+- If you have created a project, ensure that billing is enabled for your project. More information on:
   ```
   https://cloud.google.com/billing/docs/how-to/modify-project
   ```
-  - Enable the AI Platform ("Cloud Machine Learning Engine") and Compute Engine APIs:
+- Enable the AI Platform ("Cloud Machine Learning Engine") and Compute Engine APIs:
   ```
   https://console.cloud.google.com/flows/enableapi?apiid=ml.googleapis.com,compute_component&_ga=2.15003827.-485953982.1561568575
   ```
-  - Create a New Service : 
+- Create a New Service : 
   ```
   gcloud beta iam service-accounts create <SERVICE_NAME>
   ```
-  - Grant permissions to the service to create and manage buckets on the GCloud: 
+- Grant permissions to the service to create and manage buckets on the GCloud: 
   ```
   gcloud projects add-iam-policy-binding <PROJECT_NAME> --member serviceAccount:<SERVICE_NAME>@<PROJECT_NAME>.iam.gserviceaccount.com --role roles/cloudbuild.builds.builder
   ```
-  - In some cases, this command fails to execute if the user doesn't have permissions to provide access rights to the project. In this case, once a service account is created, go to https://console.cloud.google.com/storage/browser and manually create a new bucket.
-  - Once this bucket is created, execute the following command: 
+- In some cases, this command fails to execute if the user doesn't have permissions to provide access rights to the project. In this case, once a service account is created, go to https://console.cloud.google.com/storage/browser and manually create a new bucket.
+
+- Once this bucket is created, execute the following command: 
   ```
   gsutil iam ch serviceAccount:<SERVICE_NAME>@<PROJECT_NAME>.iam.gserviceaccount.com:roles/storage.admin gs://<BUCKET_NAME>
   ```
