@@ -1,4 +1,5 @@
 
+
 # GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 
 ## Contents
@@ -50,25 +51,26 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
   ```
   gcloud init
   ```
-- Initializing the SDK will prompt you to authorize your account and to select a project or create a new project. (Creation of project can be through [Google Console]( https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.18563004.-485953982.1561568575) as well. However you have to execute ```gcloud init``` to select the working project.)
+- Initializing the SDK will prompt you to authorize your account and to select a project or create a new project. (Creation of project can be through [Google Console]( https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.18563004.-485953982.1561568575) as well. However you have to execute ```gcloud init``` to select the working project.). After selecting the working project, the SDK prompts you to choose a Google Compute Engine Zone. Select any zone which you want to work with.
+- Once this is done, you will get a message which says - **Your Google Cloud SDK is configured and ready to use!**
 
-- If you have created a project, ensure that billing is enabled for your project. More information on:
-  ```
-  https://cloud.google.com/billing/docs/how-to/modify-project
-  ```
-- Enable the AI Platform ("Cloud Machine Learning Engine") and Compute Engine APIs. This ensures that your project is authorized to access the AI Platform APIs for training and testing machine learning models. To enable the APIs, go to:
-  ```
-  https://console.cloud.google.com/flows/enableapi?apiid=ml.googleapis.com,compute_component&_ga=2.15003827.-485953982.1561568575
-  ```
+- Ensure that billing is enabled for your created project. [Steps to enable billing](  https://cloud.google.com/billing/docs/how-to/modify-project#confirm_billing_is_enabled_on_a_project). 
+
+- Enable the AI Platform ("Cloud Machine Learning Engine") and Compute Engine APIs. This ensures that your project is authorized to access the AI Platform APIs for training and testing machine learning models. Click [here]( https://console.cloud.google.com/flows/enableapi?apiid=ml.googleapis.com,compute_component&_ga=2.15003827.-485953982.1561568575) to enable the APIs and select the working project for which you want to enable the APIs.
 - Create a New Service. A [service account](https://cloud.google.com/iam/docs/service-accounts?_ga=2.170145449.-827903836.1583451287) is basically a special kind of account used by an application or a virtual machine (VM) instance, not a person. Applications use service accounts to make authorized API calls. To create a new service, execute the following command: 
   ```
   gcloud beta iam service-accounts create <SERVICE_NAME>
+  
+  # SERVICE_NAME must be between 6 and 30 characters (inclusive), must begin 
+  with a lowercase letter, and consist of lowercase alphanumeric characters 
+  that can be separated by hyphens.
   ```
+  (This command in some cases prompts you to install the **gcloud beta commands**. Install these commads by Typing **Y**.) 
 - Grant permissions to the service to create and manage buckets on the GCloud: 
   ```
   gcloud projects add-iam-policy-binding <PROJECT_NAME> --member serviceAccount:<SERVICE_NAME>@<PROJECT_NAME>.iam.gserviceaccount.com --role roles/cloudbuild.builds.builder
   ```
-- In some cases, this command fails to execute if the user doesn't have permissions to provide access rights to the project. In this case, once a service account is created, go to https://console.cloud.google.com/storage/browser and manually create a new bucket. A bucket a required because the Google AI platform interacts with the bucket for fetching the data required for training and then storing the trained models into the bucket.
+- In some cases, this command fails to execute if the user doesn't have permissions to provide access rights to the project. In this case, once a service account is created, go to https://console.cloud.google.com/storage/browser and manually create a new bucket. Choose all the default options and click create. (A bucket a required because the Google AI platform interacts with the bucket for fetching the data required for training and then storing the trained models into the bucket.)
 
 - Once this bucket is created, execute the following command to grant storage admin permissions to the service. This ensures that the adapter communicates with the bucket to store the training data in the bucket.
   ```
@@ -194,4 +196,3 @@ The following adapters are designed to work on the **Darwin (OS X) x86-64** arch
 ```TestingPortal```: This portal essentially allows the user to:
 - Fetch Features used for Training the Model
 - Input Features to predict a particular value
-
