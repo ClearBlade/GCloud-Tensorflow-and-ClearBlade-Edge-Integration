@@ -65,7 +65,7 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
   with a lowercase letter, and consist of lowercase alphanumeric characters 
   that can be separated by hyphens.
   ```
-  (This command in some cases prompts you to install the **gcloud beta commands**. Install these commads by Typing **Y**.) 
+  (This command in some cases prompts you to install the **gcloud beta commands**. Type **Y** to install these commands) 
 - Grant permissions to the service to create and manage buckets on the GCloud: 
   ```
   gcloud projects add-iam-policy-binding <PROJECT_NAME> --member serviceAccount:<SERVICE_NAME>@<PROJECT_NAME>.iam.gserviceaccount.com --role roles/cloudbuild.builds.builder
