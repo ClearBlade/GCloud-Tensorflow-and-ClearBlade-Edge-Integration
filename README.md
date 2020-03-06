@@ -169,6 +169,8 @@ The following adapters are designed to work on the **Darwin (OS X) x86-64** arch
 
 ```fetchTrainData```: A service which fetches the train data to be displayed on the portals
 
+```getSystemParams```: A service which returns the system key and system secret key
+
 ### Collections
 
 ```AllFeatures```: A Collection which consists of the selected features for training
