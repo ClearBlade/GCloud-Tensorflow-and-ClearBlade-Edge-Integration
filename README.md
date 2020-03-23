@@ -85,7 +85,11 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 - Open a Terminal on your Machine.
 - Create a new Directory and navigate to that Directory.
 - Go to the Platform and [Open this System](#system-installation-1). 
-- Create a new user with **username=*test@email.com*** and **password=*password*** (A user with same credentials might already be present in the system.)
+- Create a [new service account](https://docs.clearblade.com/v/4/security/#service-account).
+- Once this user is created, go to **Adapters** and click on *TrainingAAdapter*. Configure this adapter by clicking on the pencil sign next to the **Configuration**. When configuration window opens, add the service username to the *cb_service_account* flag. Your start script should look like this - 
+```
+sh train.sh -cb_service_account=<CB_SERVICE_ACCOUNT_USERNAME>
+```
 - Use these credentials to open the portals.
 - Navigate to Edges on the ClearBlade Platform and [Install](https://docs.clearblade.com/v/4/edge/tutorial/#install-and-start) the *TrainingEdge*. An Adapter is running on this edge which installs all the dependencies required for training the model.
 - To check whether the adapter has been deployed successfully, open an another terminal session and execute the following command:
