@@ -86,7 +86,7 @@ https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 - Create a new Directory and navigate to that Directory.
 - Go to the Platform and [Open this System](#system-installation-1). 
 - Create a [new service account](https://docs.clearblade.com/v/4/security/#service-account).
-- Once this user is created, go to **Adapters** and click on *TrainingAAdapter*. Configure this adapter by clicking on the pencil sign next to the **Configuration**. When configuration window opens, add the service username to the *cb_service_account* flag. Your start script should look like this - 
+- Once this user is created, go to **Adapters** and click on *TrainingAdapter*. Configure this adapter by clicking on the pencil sign next to the **Configuration**. When configuration window opens, your start script should look like this - 
 ```
 sh train.sh -cb_service_account=<CB_SERVICE_ACCOUNT_USERNAME>
 ```
@@ -122,6 +122,12 @@ Machine Learning models essentially work in two phases - ```Training Phase and T
 - Testing on the same machine:
   - Stop the Training Edge : **CTRL-C**
   - Create a new Directory and navigate to that Directory.
+  - Go to the Platform and [Open this System](#system-installation-1). 
+  - Create a [new service account](https://docs.clearblade.com/v/4/security/#service-account).
+  - Once this user is created, go to **Adapters** and click on *MLAdapter*. Configure this adapter by clicking on the       pencil sign next to the **Configuration**. When configuration window opens, your start script should look like this - 
+  ```
+  sh start.sh -cb_service_account=<CB_SERVICE_ACCOUNT_USERNAME>
+  ```
   - Navigate to Edges on the Platform and [Install](https://docs.clearblade.com/v/4/edge/tutorial/#install-and-start) *MLEdge* 
   An Adapter is running on this edge which installs all the dependencies required for testing the model. 
   - Go to the portals and click on *TestingPortal*.
@@ -129,6 +135,12 @@ Machine Learning models essentially work in two phases - ```Training Phase and T
 - Testing on the different machine:
   - Open a Terminal on your Machine.
   - Create a new Directory and navigate to that Directory.
+  - Go to the Platform and [Open this System](#system-installation-1). 
+  - Create a [new service account](https://docs.clearblade.com/v/4/security/#service-account).
+  - Once this user is created, go to **Adapters** and click on *MLAdapter*. Configure this adapter by clicking on the       pencil sign next to the **Configuration**. When configuration window opens, your start script should look like this - 
+  ```
+  sh start.sh -cb_service_account=<CB_SERVICE_ACCOUNT_USERNAME>
+  ```
   - Navigate to Edges on the Platform and [Install](https://docs.clearblade.com/v/4/edge/tutorial/#install-and-start) *MLEdge* 
    An Adapter is running on this edge which installs all the dependencies required for testing the model. 
   - Go to the portals and click on *TestingPortal*.
