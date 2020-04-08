@@ -128,6 +128,7 @@ Machine Learning models essentially work in two phases - ```Training Phase and T
   ```
   sh start.sh -cb_service_account=<CB_SERVICE_ACCOUNT_USERNAME>
   ```
+  - Hit the *Update Adapter* button.
   - Navigate to Edges on the Platform and [Install](https://docs.clearblade.com/v/4/edge/tutorial/#install-and-start) *MLEdge* 
   An Adapter is running on this edge which installs all the dependencies required for testing the model. 
   - Go to the portals and click on *TestingPortal*.
@@ -141,6 +142,7 @@ Machine Learning models essentially work in two phases - ```Training Phase and T
   ```
   sh start.sh -cb_service_account=<CB_SERVICE_ACCOUNT_USERNAME>
   ```
+  - Hit the *Update Adapter* button.
   - Navigate to Edges on the Platform and [Install](https://docs.clearblade.com/v/4/edge/tutorial/#install-and-start) *MLEdge* 
    An Adapter is running on this edge which installs all the dependencies required for testing the model. 
   - Go to the portals and click on *TestingPortal*.
