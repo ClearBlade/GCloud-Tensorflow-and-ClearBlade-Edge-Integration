@@ -1,32 +1,62 @@
 {
+    "author": "Rajas Deshpande <rdeshpande@clearblade.com>",
+    "description": "GCloud AI and ClearBlade Edge Integration",
     "asset_types": [
-        "Adapters",
+        "System",
+        "Code Libraries",
         "Code Services",
-        "Collections",
-        "Devices",
-        "Edges",
         "Portals",
+        "Collections",
+        "Triggers",
+        "Adapters",
         "Roles",
-        "Users"
+        "Timers",
+        "Plugins",
+        "Users",
+        "Edges",
+        "Devices"
     ],
-    "author": {
-        "email": "rdeshpande@clearblade.com"
-    },
-    "clouds": [],
-    "description": "",
-    "domains": [],
-    "gateways": [],
-    "image_url": "https://docs.clearblade.com/v/4/static/img/default_package.png",
-    "keywords": [
-        "clearblade",
-        "iot",
-        "platform"
-    ],
+    "version": "1.0.0",
     "license": "MIT",
-    "name": "DataPreprocessing",
-    "private": false,
-    "prog_lang": [],
-    "protocols": [],
+    "keywords": [
+        "Neural Networks",
+        "Classification",
+        "Machine Learning",
+        "System Template",
+        "Predictive Maintenance"
+    ],
+    "prog_lang": [
+        "javascript",
+        "python"
+    ],
+    "cloud": [],
     "things": [],
-    "version": "1.0.0"
+    "domains": [
+        "Artificial Intelligence",
+        "Predictive Maintenance",
+        "System Template"
+    ],
+    "protocols": [],
+    "gateways": [],
+    "name": "GCloud-Tensorflow-and-ClearBlade-Edge-Integration",
+    "private": false,
+    "image_url": "https://i.imgur.com/EfMmwAq.png?1",
+    "dependencies": {
+        "some_clearblade_lib": "latest",
+        "http": "latest"
+    },
+    "scripts": {
+        "jsdoc": ""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration"
+    },
+    "bugs": {
+        "url": "https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/issues"
+    },
+    "homepage": "https://github.com/ClearBlade/GCloud-Tensorflow-and-ClearBlade-Edge-Integration#readme",
+    "devDependencies": {
+        "jsdoc-to-markdown": "^4.0.1"
+    }
 }
