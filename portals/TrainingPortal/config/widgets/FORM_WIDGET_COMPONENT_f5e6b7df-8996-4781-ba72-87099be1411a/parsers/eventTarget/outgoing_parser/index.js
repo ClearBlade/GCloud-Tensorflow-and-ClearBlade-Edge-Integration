@@ -37,7 +37,7 @@ parser = (ctx) => {
   }
 
   var data = ctx.widget.data;
-  data["url"] = CB_PORTAL.ClearBlade.URI;
+//   data["url"] = CB_PORTAL.ClearBlade.URI;
   //console.log(data)
   
   if(datasources.datafilename.latestData() == undefined){
