@@ -70,7 +70,7 @@ parser = (ctx) => {
   }
 
   data["toClean"] = clean;
-  delete data["field29"]
+  delete data["field30"]
   datasources.send.sendData(JSON.stringify(data));
   alert("Data Sent for Training. Go To https://console.cloud.google.com/mlengine/jobs?project=clearblade-testing to monitor your progress")
 
