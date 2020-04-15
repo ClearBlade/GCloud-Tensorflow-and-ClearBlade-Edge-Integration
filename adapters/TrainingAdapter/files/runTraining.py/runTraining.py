@@ -88,12 +88,12 @@ try:
         if(published == 1):
             getCollections.get_data()
 
-            df, label, to_clean, token, cat_id = gc.fetch()
+            df, label, to_clean, token, cat_id, url = gc.fetch()
             df = gc.convert_to_float(df, to_clean)
             df, cat_data = gc.create_categorical_mapping(df)
             meanstd = gc.create_mean_std_mapping(df, label)
             status_code = gc.send_data_to_collections(
-                cat_data, meanstd, to_clean, label, token, cat_id)
+                cat_data, meanstd, to_clean, label, token, cat_id, url)
             print(status_code)
 
             execute.connect_to_gcloud()

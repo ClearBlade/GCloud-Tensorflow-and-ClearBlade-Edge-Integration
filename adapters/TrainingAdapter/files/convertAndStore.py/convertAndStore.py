@@ -7,7 +7,7 @@ import requests
 # model_data = {}
 
 
-def create_collection_columns(arr, systemKey, usertoken, modelid):
+def create_collection_columns(arr, systemKey, usertoken, modelid, url):
 
     header = {
         "ClearBlade-UserToken": usertoken,
@@ -24,13 +24,14 @@ def create_collection_columns(arr, systemKey, usertoken, modelid):
             }
         }
 
+        url = url + "/api/v/3/collectionmanagement"
         response = requests.put(
-            "https://staging.clearblade.com/api/v/3/collectionmanagement", headers=header, data=json.dumps(body))
+            url, headers=header, data=json.dumps(body))
 
     print("Columns Created - [Response]: " + str(response.status_code))
 
 
-def add_data(arr, encoded_dict, systemKey, usertoken, modelid):
+def add_data(arr, encoded_dict, systemKey, usertoken, modelid, url):
     header = {
         "ClearBlade-UserToken": usertoken,
         "collectionID": modelid
@@ -41,13 +42,13 @@ def add_data(arr, encoded_dict, systemKey, usertoken, modelid):
     for i in arr:
         body[i] = encoded_dict[i]
 
-    url = "https://staging.clearblade.com/api/v/1/data/" + modelid
+    url = url +  "/api/v/1/data/" + modelid
     response = requests.post(url, headers=header, data=json.dumps(body))
     print(
         "Model Stored in the Collections - [Response]: " + str(response.status_code))
 
 
-def generateSchema(systemKey, usertoken, modelid):
+def generateSchema(systemKey, usertoken, modelid, url):
 
     arr = []
     encoded_dict = {}
@@ -96,8 +97,8 @@ def generateSchema(systemKey, usertoken, modelid):
                 encoded_dict[col_name] = encoded_name
                 i += 1
 
-    create_collection_columns(arr, systemKey, usertoken, modelid)
-    add_data(arr, encoded_dict, systemKey, usertoken, modelid)
+    create_collection_columns(arr, systemKey, usertoken, modelid, url)
+    add_data(arr, encoded_dict, systemKey, usertoken, modelid, url)
 
 
 def gcloud_to_cb():
@@ -107,6 +108,7 @@ def gcloud_to_cb():
     systemKey = train_params["systemKey"]
     usertoken = train_params["usertoken"]
     modelid = train_params["modelid"]
+    url = train_params["url"]
 
     gm.get_model_from_gcloud()
-    generateSchema(systemKey, usertoken, modelid)
+    generateSchema(systemKey, usertoken, modelid, url)

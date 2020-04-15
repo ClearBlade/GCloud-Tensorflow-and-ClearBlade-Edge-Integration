@@ -67,7 +67,7 @@ def create_mean_std_mapping(df, label):
         logging.error(e)
 
 
-def send_data_to_collections(cat_data, meanstd, to_clean, label, token, cat_id):
+def send_data_to_collections(cat_data, meanstd, to_clean, label, token, cat_id, url):
     cat_data = str(cat_data)
     cat_data = cat_data.encode()
     encoded_cat = base64.b64encode(cat_data).decode('ascii')
@@ -92,7 +92,7 @@ def send_data_to_collections(cat_data, meanstd, to_clean, label, token, cat_id):
         "prediction_label": label
     }
 
-    url = "https://staging.clearblade.com/api/v/1/data/" + cat_id
+    url = url + "/api/v/1/data/" + cat_id
     response = requests.post(url, headers=header, data=json.dumps(body))
 
     return response.status_code
@@ -113,6 +113,7 @@ def fetch():
         to_clean = train_params["toClean"]
         token = train_params["usertoken"]
         cat_id = train_params["cat_id"]
+        url = train_params["url"]
 
         with open(collection, 'r') as cl:
             data = json.load(cl)
@@ -121,7 +122,7 @@ def fetch():
         item_id = df.pop("item_id")
         logging.debug("Converted JSON collection to a pandas dataframe")
 
-        return df, label, to_clean, token, cat_id
+        return df, label, to_clean, token, cat_id, url
     except Exception as e:
         logging.error(e)
 
