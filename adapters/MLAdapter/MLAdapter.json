@@ -6,7 +6,7 @@
     "name": "MLAdapter",
     "os": "",
     "protocol": "",
-    "start_command": "python runpredict.py",
+    "start_command": "sh start.sh -cb_service_account=test@email.com",
     "status_command": "",
     "stop_command": "",
     "undeploy_command": ""

@@ -2,138 +2,48 @@
     "items": [
         {
             "dtypes": "float",
-            "features": "sensor17_count",
-            "item_id": "0a1890f3-8a65-48a7-88e7-d594e53a259c"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor8_count",
-            "item_id": "1129ab04-fd69-4c53-b74c-f24b4045b629"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor4_count",
-            "item_id": "15deb62c-1d31-4f64-af9d-7ab7ed3135eb"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor12_count",
-            "item_id": "17a6e419-bf5a-4120-9bac-4526da9c750b"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor18_count",
-            "item_id": "1ec29309-1c13-4ac6-8561-3ee8a94bce9e"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor19_count",
-            "item_id": "2a5d1c49-f58d-45d2-9ec9-ab0b0f36e354"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor23_count",
-            "item_id": "5597cf07-9262-45a8-94fb-e20e770534a8"
-        },
-        {
-            "dtypes": "float",
             "features": "sensor6_count",
-            "item_id": "572ca948-df70-4da6-aaec-d732a4296c98"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor15_count",
-            "item_id": "644953a0-23b2-4395-9c45-c985bcc36edf"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor2_count",
-            "item_id": "696fb43f-95de-4b55-99f7-cf2966b65a39"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor21_count",
-            "item_id": "704ccc60-9965-419b-ab9d-a6a726a3e4ad"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor25_count",
-            "item_id": "7c331158-31f2-4c66-aff5-0482d3334fe8"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor16_count",
-            "item_id": "7f0bd7df-949f-4c2d-bd59-ad52afabbfe8"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor9_count",
-            "item_id": "930cb6ab-f043-4063-b057-22692a8f9c47"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor10_count",
-            "item_id": "9c46d859-230f-47f5-85ea-4a07e003cb64"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor13_count",
-            "item_id": "9d331214-e204-4183-8dc1-4e256fd2a841"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor5_count",
-            "item_id": "a264a9af-b234-4021-a492-851d7d016def"
+            "item_id": "2a350e05-6855-4707-bd65-d4eba66baec3"
         },
         {
             "dtypes": "float",
             "features": "sensor14_count",
-            "item_id": "b68bb8f3-665a-451c-ab26-e9b56243c19a"
+            "item_id": "5891ab21-59d7-4b06-a8da-037136775392"
         },
         {
             "dtypes": "float",
-            "features": "sensor3_count",
-            "item_id": "ba57300d-4756-4f5d-ad6b-97ac4100c19e"
+            "features": "sensor15_count",
+            "item_id": "5aa6531f-601c-4146-b10f-01a846804233"
         },
         {
             "dtypes": "float",
-            "features": "sensor7_count",
-            "item_id": "cb99b961-d03e-4dea-9476-7493437fe0e6"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor11_count",
-            "item_id": "d78e8bb7-9a15-4634-a69a-394ed044749b"
+            "features": "sensor9_count",
+            "item_id": "5db68097-5259-4849-91ca-4a681ac0c9dc"
         },
         {
             "dtypes": "float",
             "features": "maintenance_required",
-            "item_id": "db6c5b95-fb37-4a14-8e3c-e63ae6579258"
+            "item_id": "73796e3b-328b-42bb-9d26-cec8c9468371"
         },
         {
             "dtypes": "float",
-            "features": "sensor26_count",
-            "item_id": "e11147d0-7734-4984-a387-4b4bb6535a91"
+            "features": "sensor8_count",
+            "item_id": "b018ed97-cce3-4e60-aed2-93afdf5c2f26"
         },
         {
             "dtypes": "float",
-            "features": "sensor1_count",
-            "item_id": "ecf39c58-54d2-40db-a9b9-0618c01ac4fc"
+            "features": "sensor17_count",
+            "item_id": "b9697745-f84e-4b99-b24a-5f645cf5357e"
         },
         {
             "dtypes": "float",
-            "features": "sensor20_count",
-            "item_id": "f24b58af-9fa2-4c2b-8965-7b5fcf042a96"
+            "features": "sensor12_count",
+            "item_id": "ca77d9b9-40af-49ca-ba39-da984ae90033"
         },
         {
             "dtypes": "float",
-            "features": "sensor22_count",
-            "item_id": "f4a3d51a-15b3-403c-9623-bb5de0a45b2e"
-        },
-        {
-            "dtypes": "float",
-            "features": "sensor24_count",
-            "item_id": "f83324fd-8c30-4189-a766-e4496983604a"
+            "features": "sensor13_count",
+            "item_id": "d4e7757d-4d2a-4823-8646-d492d029f317"
         }
     ],
     "name": "AllFeatures",

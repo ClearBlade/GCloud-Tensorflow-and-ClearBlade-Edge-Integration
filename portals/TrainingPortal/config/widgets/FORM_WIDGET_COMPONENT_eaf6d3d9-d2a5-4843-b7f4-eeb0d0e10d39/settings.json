@@ -11,7 +11,7 @@
             "CALCULATED_DATA_TYPE",
             "DYNAMIC_DATA_TYPE"
         ],
-        "id": "1aa674f6-520c-4340-bb4a-fa67a7f4a3a1",
+        "id": "f6edb17d-3fcc-4716-ad9e-92428113bf43",
         "outgoing_parser": {
             "isDebugOn": false,
             "value": "./parsers/eventTarget/outgoing_parser/index.js"

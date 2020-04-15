@@ -22,14 +22,14 @@
             "sync": true
         },
         {
-            "asset_class": "AllFeatures",
+            "asset_class": "ModelArchitecture",
             "asset_id": "",
             "deployment": "MLDeployment",
             "member": "MLDeployment_deployment_edge_group",
             "sync": true
         },
         {
-            "asset_class": "ModelArchitecture",
+            "asset_class": "AllFeatures",
             "asset_id": "",
             "deployment": "MLDeployment",
             "member": "MLDeployment_deployment_edge_group",

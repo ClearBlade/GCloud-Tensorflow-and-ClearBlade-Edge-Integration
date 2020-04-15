@@ -14,11 +14,11 @@ parser = (ctx) => {
     var encoded_arch = btoa(archFile);
     var encoded_train = btoa(trainFile);
 
-    var url = "https://staging.clearblade.com/api/v/1/collection/a6c2e6d10bc2f183fca3c7d3d0fe01/TrainingFiles"
+    var url = "https://staging.clearblade.com/api/v/1/collection/" + CB_PORTAL.ClearBlade.systemKey +"/TrainingFiles"
 
     var header = {
-      "ClearBlade-UserToken" : datasources.authtoken.latestData(),
-      "systemKey" : "92c4d0d30b9884faaac380f694b201",
+      "ClearBlade-UserToken" : CB_PORTAL.ClearBlade.user.authToken,
+      "systemKey" : CB_PORTAL.ClearBlade.systemKey,
       "collectionName" : "TrainingFiles"
     }
 
@@ -57,8 +57,12 @@ parser = (ctx) => {
       data["taskFile"] = datasources.trainfilename.latestData();
   }
 
-  data["usertoken"] = datasources.authtoken.latestData();
-  data["modelid"] = "9ed0fcd20b98a0f6e3af8ccd859d01"
+  // data["usertoken"] = datasources.authtoken.latestData();
+  // data["modelid"] = "9ed0fcd20b98a0f6e3af8ccd859d01"
+
+  data["usertoken"] = CB_PORTAL.ClearBlade.user.authToken;
+  data["modelid"] = datasources.modelArchitectureID.latestData();
+  data["cat_id"] = datasources.categoricalDataID.latestData(); 
 
   var clean = [];
   for (var i=0; i<datasources.cleanColumns.latestData().clean.length; i++){

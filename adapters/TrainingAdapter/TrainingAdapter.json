@@ -6,8 +6,8 @@
     "name": "TrainingAdapter",
     "os": "",
     "protocol": "",
-    "start_command": "sh train.sh",
+    "start_command": "sh train.sh -cb_service_account=test@email.com",
     "status_command": "",
-    "stop_command": "",
+    "stop_command": "sh stop.sh",
     "undeploy_command": ""
 }

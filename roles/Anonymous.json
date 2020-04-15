@@ -5,6 +5,9 @@
         "AllCollections": {
             "Level": 0
         },
+        "AllExternalDatabases": {
+            "Level": 0
+        },
         "AllServices": {
             "Level": 0
         },
@@ -61,6 +64,10 @@
             "Level": 0
         },
         "EdgesList": {
+            "Level": 0
+        },
+        "ExternalDatabases": [],
+        "ManageUsers": {
             "Level": 0
         },
         "MsgHistory": {

@@ -27,15 +27,17 @@
                     "static": false,
                     "w": 10,
                     "x": 0,
-                    "y": 58.3
+                    "y": 48.3
                 },
                 "md": {
                     "h": 5,
                     "i": "activation1",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 57
+                    "y": 65
                 },
                 "sm": {
                     "h": 5,
@@ -99,15 +101,17 @@
                     "static": false,
                     "w": 10,
                     "x": 10,
-                    "y": 58.3
+                    "y": 48.3
                 },
                 "md": {
                     "h": 5,
                     "i": "activation2",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 78
+                    "y": 92.3
                 },
                 "sm": {
                     "h": 5,
@@ -171,15 +175,17 @@
                     "static": false,
                     "w": 10,
                     "x": 20,
-                    "y": 58.3
+                    "y": 48.3
                 },
                 "md": {
                     "h": 5,
                     "i": "activation3",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 81
+                    "y": 97.3
                 },
                 "sm": {
                     "h": 5,
@@ -237,15 +243,17 @@
                     "static": false,
                     "w": 5,
                     "x": 25,
-                    "y": 63.3
+                    "y": 53.3
                 },
                 "md": {
                     "h": 5,
                     "i": "batchsize",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 84
+                    "y": 102.3
                 },
                 "sm": {
                     "h": 5,
@@ -301,7 +309,7 @@
                     "static": false,
                     "w": 30,
                     "x": 0,
-                    "y": 35
+                    "y": 25
                 },
                 "md": {
                     "h": 5,
@@ -311,7 +319,7 @@
                     "static": false,
                     "w": 24,
                     "x": 0,
-                    "y": 30
+                    "y": 25
                 },
                 "sm": {
                     "h": 5,
@@ -440,15 +448,17 @@
                     "static": false,
                     "w": 5,
                     "x": 20,
-                    "y": 63.3
+                    "y": 53.3
                 },
                 "md": {
                     "h": 5,
                     "i": "epochs",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 69
+                    "y": 85
                 },
                 "sm": {
                     "h": 5,
@@ -507,15 +517,17 @@
                     "static": false,
                     "w": 10,
                     "x": 0,
-                    "y": 53.3
+                    "y": 43.3
                 },
                 "md": {
                     "h": 5,
                     "i": "f_layer",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 51
+                    "y": 50
                 },
                 "sm": {
                     "h": 5,
@@ -574,7 +586,7 @@
                     "static": false,
                     "w": 30,
                     "x": 0,
-                    "y": 30
+                    "y": 20
                 },
                 "md": {
                     "h": 5,
@@ -584,7 +596,7 @@
                     "static": false,
                     "w": 24,
                     "x": 0,
-                    "y": 20
+                    "y": 15
                 },
                 "sm": {
                     "h": 5,
@@ -642,7 +654,7 @@
                     "static": false,
                     "w": 10,
                     "x": 20,
-                    "y": 71.3
+                    "y": 58.3
                 },
                 "md": {
                     "h": 5,
@@ -652,7 +664,7 @@
                     "static": false,
                     "w": 24,
                     "x": 0,
-                    "y": 45
+                    "y": 35
                 },
                 "sm": {
                     "h": 5,
@@ -707,14 +719,14 @@
             "key": "82e159b8-8b0d-4182-a3eb-e1e5fbd24de9",
             "layout": {
                 "lg": {
-                    "h": 4,
+                    "h": 5,
                     "i": "field14",
                     "minH": 3,
                     "moved": false,
                     "static": false,
                     "w": 10,
                     "x": 0,
-                    "y": 71.3
+                    "y": 58.3
                 },
                 "md": {
                     "h": 5,
@@ -724,7 +736,7 @@
                     "static": false,
                     "w": 24,
                     "x": 0,
-                    "y": 50
+                    "y": 45
                 },
                 "sm": {
                     "h": 5,
@@ -785,7 +797,7 @@
                     "static": false,
                     "w": 10,
                     "x": 10,
-                    "y": 71.3
+                    "y": 58.3
                 },
                 "md": {
                     "h": 5,
@@ -795,7 +807,7 @@
                     "static": false,
                     "w": 24,
                     "x": 0,
-                    "y": 55
+                    "y": 60
                 },
                 "sm": {
                     "h": 5,
@@ -852,22 +864,24 @@
             "label": "Use Default Model",
             "layout": {
                 "lg": {
-                    "h": 3,
+                    "h": 5,
                     "i": "field29",
-                    "minH": 3,
+                    "minH": 15,
                     "moved": false,
-                    "static": false,
-                    "w": 30,
+                    "static": true,
+                    "w": 18,
                     "x": 0,
-                    "y": 68.3
+                    "y": 87.3
                 },
                 "md": {
                     "h": 5,
                     "i": "field29",
-                    "minH": 3,
-                    "w": 36,
+                    "minH": 15,
+                    "moved": true,
+                    "static": true,
+                    "w": 18,
                     "x": 0,
-                    "y": 87
+                    "y": 87.3
                 },
                 "sm": {
                     "h": 5,
@@ -882,10 +896,12 @@
                 "xl": {
                     "h": 5,
                     "i": "field29",
-                    "minH": 3,
-                    "w": 36,
+                    "minH": 15,
+                    "moved": true,
+                    "static": true,
+                    "w": 18,
                     "x": 0,
-                    "y": 87
+                    "y": 87.3
                 },
                 "xs": {
                     "h": 20,
@@ -923,15 +939,17 @@
                     "static": false,
                     "w": 10,
                     "x": 10,
-                    "y": 53.3
+                    "y": 43.3
                 },
                 "md": {
                     "h": 5,
                     "i": "h_layer",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 54
+                    "y": 55
                 },
                 "sm": {
                     "h": 5,
@@ -990,15 +1008,17 @@
                     "static": false,
                     "w": 30,
                     "x": 0,
-                    "y": 46
+                    "y": 36
                 },
                 "md": {
                     "h": 2.3,
                     "i": "hyperparameters",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 75
+                    "y": 90
                 },
                 "sm": {
                     "h": 2.3,
@@ -1055,7 +1075,7 @@
                     "static": false,
                     "w": 30,
                     "x": 0,
-                    "y": 40
+                    "y": 30
                 },
                 "md": {
                     "h": 5,
@@ -1065,7 +1085,7 @@
                     "static": false,
                     "w": 24,
                     "x": 0,
-                    "y": 35
+                    "y": 30
                 },
                 "sm": {
                     "h": 5,
@@ -1125,15 +1145,17 @@
                     "static": false,
                     "w": 10,
                     "x": 0,
-                    "y": 63.3
+                    "y": 53.3
                 },
                 "md": {
                     "h": 5,
                     "i": "l_rate",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 63
+                    "y": 75
                 },
                 "sm": {
                     "h": 5,
@@ -1190,15 +1212,17 @@
                     "static": false,
                     "w": 30,
                     "x": 0,
-                    "y": 48.3
+                    "y": 38.3
                 },
                 "md": {
                     "h": 5,
                     "i": "label",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 48
+                    "y": 40
                 },
                 "sm": {
                     "h": 5,
@@ -1265,15 +1289,17 @@
                     "static": false,
                     "w": 10,
                     "x": 10,
-                    "y": 63.3
+                    "y": 53.3
                 },
                 "md": {
                     "h": 5,
                     "i": "loss",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 66
+                    "y": 80
                 },
                 "sm": {
                     "h": 5,
@@ -1331,15 +1357,17 @@
                     "static": false,
                     "w": 10,
                     "x": 20,
-                    "y": 53.3
+                    "y": 43.3
                 },
                 "md": {
                     "h": 5,
                     "i": "o_layer",
                     "minH": 3,
-                    "w": 36,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 60
+                    "y": 70
                 },
                 "sm": {
                     "h": 5,
@@ -1381,149 +1409,6 @@
             "name": "o_layer",
             "orderIdx": 20,
             "placeholder": "Number of neurons in Output Layer"
-        },
-        "password": {
-            "dataType": "string",
-            "display": true,
-            "inputType": "password",
-            "key": "2f25eb2d-3aa1-4ee0-94d4-a6eb816ca58d",
-            "label": "Enter User Password",
-            "layout": {
-                "lg": {
-                    "h": 5,
-                    "i": "password",
-                    "minH": 3,
-                    "moved": false,
-                    "static": false,
-                    "w": 30,
-                    "x": 0,
-                    "y": 20
-                },
-                "md": {
-                    "h": 5,
-                    "i": "password",
-                    "minH": 3,
-                    "moved": false,
-                    "static": false,
-                    "w": 24,
-                    "x": 0,
-                    "y": 40
-                },
-                "sm": {
-                    "h": 5,
-                    "i": "password",
-                    "minH": 3,
-                    "moved": false,
-                    "static": false,
-                    "w": 18,
-                    "x": 0,
-                    "y": 45
-                },
-                "xl": {
-                    "h": 5,
-                    "i": "password",
-                    "minH": 3,
-                    "w": 36,
-                    "x": 0,
-                    "y": 36
-                },
-                "xs": {
-                    "h": 5,
-                    "i": "password",
-                    "minH": 3,
-                    "moved": false,
-                    "static": false,
-                    "w": 12,
-                    "x": 0,
-                    "y": 40
-                },
-                "xxs": {
-                    "h": 5,
-                    "i": "password",
-                    "minH": 3,
-                    "w": 36,
-                    "x": 0,
-                    "y": 36
-                }
-            },
-            "name": "password",
-            "orderIdx": 12,
-            "parser": {
-                "CSS": "#my-HTML-field12 {\n    color: orange;\n}",
-                "HTML": "\u003cdiv\u003e\n  My \u003ci\u003eHTML\u003c/i\u003e field12 \u003cspan id=\"my-HTML-field12\"\u003e\u003c/span\u003e\n\u003c/div\u003e",
-                "JavaScript": "$(\"#my-HTML-field12\").html(this.value || \"is empty\")"
-            },
-            "placeholder": "CB User Password",
-            "required": true
-        },
-        "project": {
-            "dataType": "string",
-            "display": true,
-            "inputType": "text",
-            "key": "508d8052-6e23-4f7a-ba17-7b4664ad4cdf",
-            "label": "Enter System Name",
-            "layout": {
-                "lg": {
-                    "h": 5,
-                    "i": "project",
-                    "minH": 3,
-                    "moved": false,
-                    "static": false,
-                    "w": 30,
-                    "x": 0,
-                    "y": 25
-                },
-                "md": {
-                    "h": 5,
-                    "i": "project",
-                    "minH": 3,
-                    "moved": false,
-                    "static": false,
-                    "w": 24,
-                    "x": 0,
-                    "y": 15
-                },
-                "sm": {
-                    "h": 5,
-                    "i": "project",
-                    "minH": 3,
-                    "moved": false,
-                    "static": false,
-                    "w": 18,
-                    "x": 0,
-                    "y": 15
-                },
-                "xl": {
-                    "h": 5,
-                    "i": "project",
-                    "minH": 3,
-                    "w": 36,
-                    "x": 0,
-                    "y": 12
-                },
-                "xs": {
-                    "h": 5,
-                    "i": "project",
-                    "minH": 3,
-                    "moved": false,
-                    "static": false,
-                    "w": 12,
-                    "x": 0,
-                    "y": 10
-                },
-                "xxs": {
-                    "h": 5,
-                    "i": "project",
-                    "minH": 3,
-                    "w": 36,
-                    "x": 0,
-                    "y": 12
-                }
-            },
-            "name": "project",
-            "orderIdx": 4,
-            "placeholder": "Your CB System Name",
-            "required": true
         },
         "systemKey": {
             "dataType": "string",
@@ -1619,7 +1504,7 @@
                     "static": false,
                     "w": 24,
                     "x": 0,
-                    "y": 25
+                    "y": 20
                 },
                 "sm": {
                     "h": 5,

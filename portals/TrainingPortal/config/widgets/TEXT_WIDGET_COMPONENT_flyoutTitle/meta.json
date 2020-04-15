@@ -1,6 +1,7 @@
 {
     "externalScripts": [],
     "id": "flyoutTitle",
+    "name": "TEXT_WIDGET_COMPONENT_flyoutTitle",
     "tab": "",
     "type": "TEXT_WIDGET_COMPONENT"
 }

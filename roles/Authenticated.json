@@ -3,12 +3,19 @@
     "Name": "Authenticated",
     "Permissions": {
         "AllCollections": {
-            "Level": 9
+            "Level": 15
+        },
+        "AllExternalDatabases": {
+            "Level": 0
         },
         "AllServices": {
             "Level": 0
         },
         "CodeServices": [
+            {
+                "Level": 1,
+                "Name": "cleanData"
+            },
             {
                 "Level": 1,
                 "Name": "clearMissingData"
@@ -44,6 +51,10 @@
             {
                 "Level": 1,
                 "Name": "getCategoricalColumns"
+            },
+            {
+                "Level": 1,
+                "Name": "getSystemParams"
             },
             {
                 "Level": 1,
@@ -127,8 +138,12 @@
         "EdgesList": {
             "Level": 15
         },
-        "MsgHistory": {
+        "ExternalDatabases": [],
+        "ManageUsers": {
             "Level": 0
+        },
+        "MsgHistory": {
+            "Level": 9
         },
         "Portals": [
             {
@@ -140,11 +155,11 @@
                 "Name": "PricePrediction"
             },
             {
-                "Level": 5,
+                "Level": 1,
                 "Name": "TestingPortal"
             },
             {
-                "Level": 5,
+                "Level": 1,
                 "Name": "TrainingPortal"
             },
             {
@@ -165,27 +180,35 @@
         "Topics": [
             {
                 "Level": 3,
-                "Name": "config"
+                "Name": "config/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "send"
+                "Name": "send/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "predict"
+                "Name": "predict/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "predict/results"
+                "Name": "predict/results/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "send/results"
+                "Name": "send/results/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "exit"
+                "Name": "exit/_broadcast"
+            },
+            {
+                "Level": 15,
+                "Name": "$trigger/#"
+            },
+            {
+                "Level": 15,
+                "Name": "$timer/#"
             }
         ],
         "Triggers": {

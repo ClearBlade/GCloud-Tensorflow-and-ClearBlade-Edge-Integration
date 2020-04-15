@@ -5,6 +5,9 @@ Yellow='\033[0;33m'
 
 echo -e "\n\n---> ${Red}Installing Dependencies${NC}"
 
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+
 echo -e "\n ---> ${Green}Installing Tensorflow${NC}\n\n"
 sudo pip install tensorflow
 

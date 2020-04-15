@@ -3,12 +3,19 @@
     "Name": "Administrator",
     "Permissions": {
         "AllCollections": {
-            "Level": 11
+            "Level": 15
+        },
+        "AllExternalDatabases": {
+            "Level": 0
         },
         "AllServices": {
             "Level": 0
         },
         "CodeServices": [
+            {
+                "Level": 1,
+                "Name": "cleanData"
+            },
             {
                 "Level": 1,
                 "Name": "clearMissingData"
@@ -44,6 +51,10 @@
             {
                 "Level": 1,
                 "Name": "getCategoricalColumns"
+            },
+            {
+                "Level": 1,
+                "Name": "getSystemParams"
             },
             {
                 "Level": 1,
@@ -127,6 +138,10 @@
         "EdgesList": {
             "Level": 15
         },
+        "ExternalDatabases": [],
+        "ManageUsers": {
+            "Level": 0
+        },
         "MsgHistory": {
             "Level": 9
         },
@@ -165,27 +180,27 @@
         "Topics": [
             {
                 "Level": 3,
-                "Name": "config"
+                "Name": "send/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "predict/results"
+                "Name": "send/predict/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "send/predict"
+                "Name": "exit/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "exit"
+                "Name": "predict/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "predict"
+                "Name": "config/_broadcast"
             },
             {
                 "Level": 3,
-                "Name": "send"
+                "Name": "predict/results/_broadcast"
             }
         ],
         "Triggers": {

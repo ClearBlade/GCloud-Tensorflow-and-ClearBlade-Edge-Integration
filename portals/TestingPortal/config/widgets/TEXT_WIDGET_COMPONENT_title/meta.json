@@ -1,6 +1,7 @@
 {
     "externalScripts": [],
     "id": "title",
+    "name": "TEXT_WIDGET_COMPONENT_title",
     "tab": "HEADER",
     "type": "TEXT_WIDGET_COMPONENT"
 }

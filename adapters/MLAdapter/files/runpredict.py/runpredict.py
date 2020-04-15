@@ -7,6 +7,7 @@ import json
 import ast
 import base64
 import os
+import sys
 
 #with open("test_params.json",'r') as fp:
 #    test_params = json.load(fp)
@@ -20,18 +21,33 @@ import os
 
 # SystemKey = "dacea5d20ba89d95a8a49fc0a89601"
 # SystemSecret = "DACEA5D20BB6A093F38AF1ACD08701"
-
 #url = "https://staging.clearblade.com"
+
+#SystemKey = "a6c2e6d10bc2f183fca3c7d3d0fe01"
+#SystemSecret = "A6C2E6D10BCADB819FABF8FCD94E"
+#url = "https://" + sys.argv[3]
+
+
+SystemKey = sys.argv[1]
+SystemSecret = sys.argv[2]
 url = "http://localhost:9000"
-SystemKey = "a6c2e6d10bc2f183fca3c7d3d0fe01"
-SystemSecret = "A6C2E6D10BCADB819FABF8FCD94E"
+
 collection = "ModelArchitecture"
-user = "test@email.com"
-pswd = "password"
+email = sys.argv[4]
+token = sys.argv[5]
+
+print("System Key: ", SystemKey)
+print("System Secret: ", SystemSecret)
+print("URL: ", url)
+print("email: ", email)
+print("token: ", token)
+
+#user = "test@email.com"
+#pswd = "password"
 
 mySystem = System(SystemKey, SystemSecret, url, safe=False)
 
-user = mySystem.User(user, pswd)
+user = mySystem.ServiceUser(email, token)
 print("Hello User")
 
 mqtt = mySystem.Messaging(user)
@@ -90,9 +106,9 @@ def decode_and_save():
     return model_folder
 
 def on_connect(client, userdata, flags, rc):
-    client.subscribe("config")
-    client.subscribe("predict")
-    client.subscribe("predict/results")
+    client.subscribe("config/_broadcast")
+    client.subscribe("predict/_broadcast")
+    client.subscribe("predict/results/_broadcast")
 
 def getCategories():
     myCol = mySystem.Collection(user, collectionName="CategoricalData")
@@ -182,7 +198,7 @@ def normalize(string):
 
 
 def on_message(client, userdata, message):
-    if (message.topic == "config"):
+    if (message.topic == "config/_broadcast"):
         print("Config Message Received!")
         #params = message.payload
         #params = params.decode('ascii')
@@ -191,7 +207,7 @@ def on_message(client, userdata, message):
         #with open("test_params.json",'w') as fp:
         #    json.dump(params, fp)
 
-    if (message.topic == "predict"):
+    if (message.topic == "predict/_broadcast"):
         print("Predict message Received")
         model_folder = decode_and_save()
         mymodel = tf.contrib.saved_model.load_keras_model("./" + model_folder)
@@ -223,15 +239,16 @@ def on_message(client, userdata, message):
                 sendResult = "Maintenance required"
         else:
             if round(float(arr[0]),4) < 0.5:
-                sendResult = "Maintenance Not required"
+                sendResult = "Maintenance not required"
             else:
                 sendResult = "Maintenance required"
 
-        mqtt.publish("predict/results", sendResult,0)
+        mqtt.publish("predict/results/_broadcast", sendResult,0)
 
 mqtt.on_connect = on_connect
 mqtt.on_message = on_message
 
 mqtt.connect()
 while(True):
-    time.sleep(1000)
+    time.sleep(5)
+    print("Waiting..")

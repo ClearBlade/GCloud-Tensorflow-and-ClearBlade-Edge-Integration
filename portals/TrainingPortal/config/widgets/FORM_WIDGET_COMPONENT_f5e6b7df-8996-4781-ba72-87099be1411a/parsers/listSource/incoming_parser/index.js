@@ -6,9 +6,13 @@ parser = (ctx) => {
   * @type {FormSourceObj}
   */
 
-  const systemKey = datasources.systemCredentials.latestData().systemKey;
+  // const systemKey = datasources.systemCredentials.latestData().systemKey;
   const systemSecret = datasources.systemCredentials.latestData().systemSecret;
-  const systemName = datasources.systemCredentials.latestData().systemName;
+  // const systemName = datasources.systemCredentials.latestData().systemName;
+
+  const systemKey = CB_PORTAL.ClearBlade.systemKey;
+  // const systemSecret = CB_PORTAL.ClearBlade.systemSecret;
+  // const systemName = CB_PORTAL.ClearBlade.
 
   var value = Math.floor(Math.random() * 10000);
   var bucket_name = "mybucket_" + value.toString();
@@ -21,7 +25,7 @@ parser = (ctx) => {
       featureCol: datasources.featureCollection.latestData(),
       bucket : bucket_name,
       jobName : job_name,
-      project : systemName
+      email : CB_PORTAL.ClearBlade.user.email
     },
 
     overrideFieldSettings : {

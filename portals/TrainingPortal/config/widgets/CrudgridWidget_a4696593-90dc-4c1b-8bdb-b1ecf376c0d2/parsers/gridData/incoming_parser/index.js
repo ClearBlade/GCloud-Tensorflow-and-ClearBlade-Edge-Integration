@@ -28,7 +28,6 @@ parser = (ctx) => {
   if (ctx.datasource == undefined){
     return;
   }
-  //console.log(ctx.datasource)
 
   var data = []
   for (var i=0; i<ctx.datasource.DATA.length; i++){

@@ -1,6 +1,9 @@
 /**
-* @param {context} ctx - Object containing data and model information for this item.
-*/
+* The 'parser' variable is the entry point for your parser. Write logic inside of the provided function and return a value
+* Constants and utility functions can be created outside of the parser
+* The provided ctx parameter is an object that contains data and model information on this item
+* @param {context} ctx 
+* @returns {rtn} */
 parser = (ctx) => {
   var col = ctx.widget.data["Select Training Data"];
   console.log(col);

@@ -3,8 +3,11 @@
 */
   parser = (ctx) => {
 
-    const systemKey = datasources.systemCredentials.latestData().systemKey;
+    // const systemKey = datasources.systemCredentials.latestData().systemKey;
     const systemSecret = datasources.systemCredentials.latestData().systemSecret;
+    console.log(systemSecret);
+    const systemKey = CB_PORTAL.ClearBlade.systemKey;
+    // const systemSecret = CB_PORTAL.ClearBlade.systemSecret;
 
     var id;
     // var data = datasources.CollectionName.latestData();
@@ -23,7 +26,8 @@
         return '';
     }
 
-    const token = datasources.authtoken.latestData();
+    // const token = datasources.authtoken.latestData();
+    const token = CB_PORTAL.ClearBlade.user.authToken;
     if(token == null){
       token = "";
     }
