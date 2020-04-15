@@ -14,6 +14,8 @@ parser = (ctx) => {
   // console.log(systemSecret);
 
   const systemKey = CB_PORTAL.ClearBlade.systemKey;
+
+  // console.log(CB_PORTAL.ClearBlade.URI);
   // const systemSecret = CB_PORTAL.ClearBlade.systemSecret;
 
   // function authenticate(){
@@ -41,7 +43,7 @@ parser = (ctx) => {
 
   function getData(){  
     // datasources.authtoken.sendData(data["user_token"]); 
-    var url = "https://staging.clearblade.com/api/v/3/allcollections/" + systemKey;
+    var url = CB_PORTAL.ClearBlade.URI + "/api/v/3/allcollections/" + systemKey;
     // var header = {
     //   "ClearBlade-UserToken" : data["user_token"],
     //   "systemKey" : systemKey

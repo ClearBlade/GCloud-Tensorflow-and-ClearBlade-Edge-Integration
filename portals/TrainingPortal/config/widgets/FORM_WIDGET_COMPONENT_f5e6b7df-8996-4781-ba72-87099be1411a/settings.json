@@ -27,7 +27,7 @@
                     "static": false,
                     "w": 10,
                     "x": 0,
-                    "y": 48.3
+                    "y": 47.3
                 },
                 "md": {
                     "h": 5,
@@ -101,7 +101,7 @@
                     "static": false,
                     "w": 10,
                     "x": 10,
-                    "y": 48.3
+                    "y": 47.3
                 },
                 "md": {
                     "h": 5,
@@ -175,7 +175,7 @@
                     "static": false,
                     "w": 10,
                     "x": 20,
-                    "y": 48.3
+                    "y": 47.3
                 },
                 "md": {
                     "h": 5,
@@ -185,7 +185,7 @@
                     "static": false,
                     "w": 24,
                     "x": 0,
-                    "y": 97.3
+                    "y": 102.3
                 },
                 "sm": {
                     "h": 5,
@@ -243,7 +243,7 @@
                     "static": false,
                     "w": 5,
                     "x": 25,
-                    "y": 53.3
+                    "y": 52.3
                 },
                 "md": {
                     "h": 5,
@@ -253,7 +253,7 @@
                     "static": false,
                     "w": 24,
                     "x": 0,
-                    "y": 102.3
+                    "y": 107.3
                 },
                 "sm": {
                     "h": 5,
@@ -309,7 +309,7 @@
                     "static": false,
                     "w": 30,
                     "x": 0,
-                    "y": 25
+                    "y": 30
                 },
                 "md": {
                     "h": 5,
@@ -448,7 +448,7 @@
                     "static": false,
                     "w": 5,
                     "x": 20,
-                    "y": 53.3
+                    "y": 52.3
                 },
                 "md": {
                     "h": 5,
@@ -517,7 +517,7 @@
                     "static": false,
                     "w": 10,
                     "x": 0,
-                    "y": 43.3
+                    "y": 42.3
                 },
                 "md": {
                     "h": 5,
@@ -654,7 +654,7 @@
                     "static": false,
                     "w": 10,
                     "x": 20,
-                    "y": 58.3
+                    "y": 57.3
                 },
                 "md": {
                     "h": 5,
@@ -726,7 +726,7 @@
                     "static": false,
                     "w": 10,
                     "x": 0,
-                    "y": 58.3
+                    "y": 57.3
                 },
                 "md": {
                     "h": 5,
@@ -797,7 +797,7 @@
                     "static": false,
                     "w": 10,
                     "x": 10,
-                    "y": 58.3
+                    "y": 57.3
                 },
                 "md": {
                     "h": 5,
@@ -854,74 +854,70 @@
                 "JavaScript": "function handleFileSelect2(evt) {\n    var files = evt.target.files; \n    f = files[0];\n\n    var reader = new FileReader();\n\n    // Closure to capture the file information.\n    reader.onload = (function(theFile) {\n        //console.log(reader.result)\n        return function(e) {\n          datasources.trainFile.sendData(e.target.result);\n          //console.log(e.target.result);\n          jQuery( '#ms_word_filtered_html' ).val( e.target.result );\n        };\n      })(f);\n\n      // Read in the image file as a data URL.\n      //console.log(f);\n      datasources.trainfilename.sendData(f.name);\n      reader.readAsText(f);\n  }\n\n  document.getElementById('upload2').addEventListener('change', handleFileSelect2, false);\n"
             }
         },
-        "field29": {
+        "field30": {
             "autoHeight": true,
             "dataType": "bool",
             "defaultValue": true,
             "display": true,
             "inputType": "boolean",
-            "key": "a9559472-beb7-45b9-8a0e-165631e04c9f",
+            "key": "8a3c7df2-f403-4cb0-b241-63f606c78c32",
             "label": "Use Default Model",
             "layout": {
                 "lg": {
                     "h": 5,
-                    "i": "field29",
-                    "minH": 15,
+                    "i": "field30",
+                    "minH": 3,
                     "moved": false,
-                    "static": true,
-                    "w": 18,
+                    "static": false,
+                    "w": 30,
                     "x": 0,
-                    "y": 87.3
+                    "y": 62.3
                 },
                 "md": {
                     "h": 5,
-                    "i": "field29",
-                    "minH": 15,
-                    "moved": true,
-                    "static": true,
-                    "w": 18,
+                    "i": "field30",
+                    "minH": 3,
+                    "moved": false,
+                    "static": false,
+                    "w": 24,
                     "x": 0,
-                    "y": 87.3
+                    "y": 97.3
                 },
                 "sm": {
                     "h": 5,
-                    "i": "field29",
-                    "minH": 15,
-                    "moved": true,
-                    "static": true,
-                    "w": 18,
+                    "i": "field30",
+                    "minH": 3,
+                    "w": 36,
                     "x": 0,
-                    "y": 87.3
+                    "y": 90
                 },
                 "xl": {
                     "h": 5,
-                    "i": "field29",
-                    "minH": 15,
-                    "moved": true,
-                    "static": true,
-                    "w": 18,
+                    "i": "field30",
+                    "minH": 3,
+                    "w": 36,
                     "x": 0,
-                    "y": 87.3
+                    "y": 90
                 },
                 "xs": {
-                    "h": 20,
-                    "i": "field29",
+                    "h": 5,
+                    "i": "field30",
                     "minH": 3,
                     "w": 36,
                     "x": 0,
-                    "y": 87
+                    "y": 90
                 },
                 "xxs": {
-                    "h": 20,
-                    "i": "field29",
+                    "h": 5,
+                    "i": "field30",
                     "minH": 3,
                     "w": 36,
                     "x": 0,
-                    "y": 87
+                    "y": 90
                 }
             },
-            "name": "field29",
-            "orderIdx": 29
+            "name": "field30",
+            "orderIdx": 30
         },
         "h_layer": {
             "dataType": "int",
@@ -939,7 +935,7 @@
                     "static": false,
                     "w": 10,
                     "x": 10,
-                    "y": 43.3
+                    "y": 42.3
                 },
                 "md": {
                     "h": 5,
@@ -1008,7 +1004,7 @@
                     "static": false,
                     "w": 30,
                     "x": 0,
-                    "y": 36
+                    "y": 35
                 },
                 "md": {
                     "h": 2.3,
@@ -1068,14 +1064,14 @@
             "label": "Enter a Job Name",
             "layout": {
                 "lg": {
-                    "h": 6,
+                    "h": 5,
                     "i": "jobName",
                     "minH": 3,
                     "moved": false,
                     "static": false,
                     "w": 30,
                     "x": 0,
-                    "y": 30
+                    "y": 25
                 },
                 "md": {
                     "h": 5,
@@ -1145,7 +1141,7 @@
                     "static": false,
                     "w": 10,
                     "x": 0,
-                    "y": 53.3
+                    "y": 52.3
                 },
                 "md": {
                     "h": 5,
@@ -1212,7 +1208,7 @@
                     "static": false,
                     "w": 30,
                     "x": 0,
-                    "y": 38.3
+                    "y": 37.3
                 },
                 "md": {
                     "h": 5,
@@ -1289,7 +1285,7 @@
                     "static": false,
                     "w": 10,
                     "x": 10,
-                    "y": 53.3
+                    "y": 52.3
                 },
                 "md": {
                     "h": 5,
@@ -1357,7 +1353,7 @@
                     "static": false,
                     "w": 10,
                     "x": 20,
-                    "y": 43.3
+                    "y": 42.3
                 },
                 "md": {
                     "h": 5,

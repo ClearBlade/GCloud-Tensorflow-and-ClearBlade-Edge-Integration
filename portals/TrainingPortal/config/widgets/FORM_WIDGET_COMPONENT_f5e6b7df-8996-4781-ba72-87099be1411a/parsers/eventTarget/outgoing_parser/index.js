@@ -14,7 +14,7 @@ parser = (ctx) => {
     var encoded_arch = btoa(archFile);
     var encoded_train = btoa(trainFile);
 
-    var url = "https://staging.clearblade.com/api/v/1/collection/" + CB_PORTAL.ClearBlade.systemKey +"/TrainingFiles"
+    var url = CB_PORTAL.ClearBlade.URI + "/api/v/1/collection/" + CB_PORTAL.ClearBlade.systemKey +"/TrainingFiles"
 
     var header = {
       "ClearBlade-UserToken" : CB_PORTAL.ClearBlade.user.authToken,

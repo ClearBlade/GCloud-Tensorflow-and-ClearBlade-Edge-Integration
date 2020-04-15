@@ -13,7 +13,7 @@ parser = (ctx) => {
     return;
   }
 
-  var url = "https://staging.clearblade.com/api/v/1/collection/" + systemKey + "/" + collection_name;
+  var url = CB_PORTAL.ClearBlade.URI + "/api/v/1/collection/" + systemKey + "/" + collection_name;
 
   function getData(url){
     // const token = datasources.authtoken.latestData();

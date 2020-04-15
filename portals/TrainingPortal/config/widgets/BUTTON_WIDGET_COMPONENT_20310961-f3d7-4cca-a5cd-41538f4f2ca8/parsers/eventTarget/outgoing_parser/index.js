@@ -32,7 +32,7 @@
       token = "";
     }
 
-    var url = "https://staging.clearblade.com/api/v/3/collectionmanagement";
+    var url = CB_PORTAL.ClearBlade.URI + "/api/v/3/collectionmanagement";
     var header = {
       "Content-Type": "application/json",
       "ClearBlade-UserToken" :token,
