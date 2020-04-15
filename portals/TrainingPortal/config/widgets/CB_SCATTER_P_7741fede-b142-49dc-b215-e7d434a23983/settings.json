@@ -1,0 +1,48 @@
+{
+    "chartData": {
+        "dataType": "CALCULATED_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "incoming_parser": {
+            "isDebugOn": false,
+            "value": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.datasource;\n}"
+        },
+        "value": "./parsers/chartData/incoming_parser/index.js"
+    },
+    "detectionStrictness": 2,
+    "enableStatisticsView": false,
+    "fill": "#6E93A8",
+    "timeformat": "MM/DD/YY, hh:mm:ss",
+    "xAxisDataKey": "timestamp",
+    "xAxisOrientation": "bottom",
+    "xAxisPaddingLeft": 0,
+    "xAxisPaddingRight": 0,
+    "xType": "category",
+    "yAxes": [
+        {
+            "autoBounds": true,
+            "dataKey": "temperature",
+            "label": "Temperature",
+            "lowerBound": 0,
+            "numberStandardDeviations": 2,
+            "orientation": "left",
+            "paddingBottom": 0,
+            "paddingTop": 0,
+            "showStandardDeviations": false,
+            "standardDeviationLabel": "σ"
+        },
+        {
+            "autoBounds": true,
+            "dataKey": "humidity",
+            "lowerBound": 0,
+            "numberStandardDeviations": 2,
+            "orientation": "right",
+            "paddingBottom": 0,
+            "paddingTop": 0,
+            "showStandardDeviations": false,
+            "standardDeviationLabel": "σ"
+        }
+    ]
+}

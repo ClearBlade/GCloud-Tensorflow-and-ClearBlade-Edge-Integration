@@ -1,0 +1,43 @@
+{
+    "HAS_UNIQUE_STYLE": false,
+    "buttonColor": "#007bff",
+    "buttonGroupColor": "#007bff",
+    "cardBackgroundColor": "#f5f5f5",
+    "compactForm": true,
+    "displayColumn": "name",
+    "editColumns": {},
+    "eventTarget": {
+        "dataType": "CALCULATED_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "outgoing_parser": {
+            "isDebugOn": false,
+            "value": "/**\n* @param {context} ctx - Object containing data and model information for this item.\n*/\nparser = (ctx) =\u003e {\n  return ctx.widget;\n}"
+        },
+        "value": "./parsers/eventTarget/outgoing_parser/index.js"
+    },
+    "fontColor": "#000000",
+    "hideSubmit": true,
+    "isReadOnly": false,
+    "listSource": {
+        "dataType": "DYNAMIC_DATA_TYPE",
+        "force_data": [
+            "CALCULATED_DATA_TYPE",
+            "DYNAMIC_DATA_TYPE"
+        ],
+        "id": "da9d8f24-dfda-4a45-8756-a22dbb52d07c",
+        "incoming_parser": {
+            "isDebugOn": false,
+            "value": "./parsers/listSource/incoming_parser/index.js"
+        }
+    },
+    "noDataText": "No data",
+    "sliderColor": "#007bff",
+    "submitText": "Submit",
+    "successNotificationText": "Form Submitted!",
+    "titleColor": "#000000",
+    "toggleColor": "#007bff",
+    "typeaheadColor": "#007bff"
+}
