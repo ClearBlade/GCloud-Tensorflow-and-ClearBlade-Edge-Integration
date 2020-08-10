@@ -1,7 +1,8 @@
 # GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 
-[![Workflow](https://img.youtube.com/vi/t70Nab7y4Do/1.jpg
-){:height="50%" width="50%"}](https://youtu.be/t70Nab7y4Do)
+<a href='https://youtu.be/t70Nab7y4Do'>
+  <img src="https://img.youtube.com/vi/t70Nab7y4Do/1.jpg" alt="Workflow"/>
+</a>
 
 ## Contents
 
