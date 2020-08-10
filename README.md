@@ -1,4 +1,4 @@
-
+![Workflow Video](https://drive.google.com/file/d/125ooGVUAClAMgz6jqGTq6UZoxnAGxOHc/view?usp=sharing)
 
 # GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 
