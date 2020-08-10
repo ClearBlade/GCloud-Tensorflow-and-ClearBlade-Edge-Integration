@@ -1,5 +1,7 @@
 # GCloud-Tensorflow-and-ClearBlade-Edge-Integration
 
+## Workflow Video
+
 <a href='https://youtu.be/t70Nab7y4Do' target="_blank">
   <img src="./VideoImage.png" alt="Workflow"/>
 </a>
